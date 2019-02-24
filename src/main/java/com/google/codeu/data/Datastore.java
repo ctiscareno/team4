@@ -63,7 +63,7 @@ public class Datastore {
     PreparedQuery results = datastore.prepare(query);
 
     for (Entity entity : results.asIterable()) {
-      try {git a
+      try {
         String idString = entity.getKey().getName();
         UUID id = UUID.fromString(idString);
         String text = (String) entity.getProperty("text");
