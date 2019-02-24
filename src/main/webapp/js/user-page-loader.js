@@ -27,7 +27,6 @@ if (!parameterUsername) {
 function setPageTitle() {
   document.getElementById('page-title').innerText = parameterUsername;
   document.title = parameterUsername + ' - User Page';
-  console.log("IS THIS SHOWING UP OR NAH");
 }
 
 /**
