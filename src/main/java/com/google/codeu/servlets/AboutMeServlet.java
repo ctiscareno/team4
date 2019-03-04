@@ -7,16 +7,18 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.jsoup.Jsoup;
+import org.jsoup.safety.Whitelist;
 
 import com.google.appengine.api.users.UserService;
 import com.google.appengine.api.users.UserServiceFactory;
 import com.google.codeu.data.Datastore;
+import com.google.codeu.data.User;
 
 /**
- * Responds with a hard-coded message for testing purposes.
+ * Handles fetching and saving user data.
  */
-@WebServlet("/about")
-public class AboutMeServlet extends HttpServlet{
+@WebServlet("/about") public class AboutMeServlet extends HttpServlet {
 
     private Datastore datastore;
 
@@ -36,29 +38,35 @@ public class AboutMeServlet extends HttpServlet{
         String user = request.getParameter("user");
 
         if(user == null || user.equals("")) {
-            // Request is invalid, return empty response
+            //Request is invalid, return empty response
             return;
         }
 
-        String aboutMe = "This is " + user + "'s about me.";
+        User userData = datastore.getUser(user);
 
-        response.getOutputStream().println(aboutMe);
+        if(userData == null || userData.getAboutMe() == null) {
+            return;
+        }
+
+        response.getOutputStream().println(userData.getAboutMe());
     }
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         UserService userService = UserServiceFactory.getUserService();
-        if(!userService.isUserLoggedIn()) {
+        if (!userService.isUserLoggedIn()) {
             response.sendRedirect("/index.html");
             return;
         }
 
         String userEmail = userService.getCurrentUser().getEmail();
+        String aboutMe = Jsoup.clean(request.getParameter("about-me"), Whitelist.none());
 
-        System.out.println("Saving about me for " + userEmail);
-        // TODO: save the data
+        User user = new User(userEmail, aboutMe);
+        datastore.storeUser(user);
 
         response.sendRedirect("/user-page.html?user=" + userEmail);
     }
 }
+
