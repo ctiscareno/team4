@@ -73,7 +73,7 @@ public class Datastore {
         String user = (String) entity.getProperty("user");
         String text = (String) entity.getProperty("text");
         long timestamp = (long) entity.getProperty("timestamp");
-        String recipient = (String) entity.getProperty("recipient");
+        recipient = (String) entity.getProperty("recipient");
 
         Message message = new Message(id, user, text, timestamp, recipient);
         messages.add(message);
@@ -138,8 +138,7 @@ public class Datastore {
 
     return user;
   }
-		return messages;
-	}
+
 	/** Returns the total number of messages for all users. */
 	public int getTotalMessageCount(){
 		Query query = new Query("Message");
