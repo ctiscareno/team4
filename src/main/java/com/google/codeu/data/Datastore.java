@@ -24,7 +24,7 @@ import com.google.appengine.api.datastore.PreparedQuery;
 import com.google.appengine.api.datastore.Query;
 import com.google.appengine.api.datastore.Query.FilterOperator;
 import com.google.appengine.api.datastore.Query.SortDirection;
-import com.google.appengine.api.users.User;
+//import com.google.appengine.api.User;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -117,7 +117,7 @@ public class Datastore {
 
 
     /** Stores the User in Datastore. */
-    public void storeUser(Users user) {
+    public void storeUser(User user) {
         Entity userEntity = new Entity("User", user.getEmail());
         userEntity.setProperty("email", user.getEmail());
         userEntity.setProperty("aboutMe", user.getAboutMe());
@@ -127,7 +127,7 @@ public class Datastore {
     /**
      * Returns the User owned by the email address, or null if no matching User was found.
      */
-    public Users getUser(String email) {
+    public User getUser(String email) {
 
         Query query = new Query("User").setFilter(new Query.FilterPredicate("email", FilterOperator.EQUAL, email));
         PreparedQuery results = datastore.prepare(query);
@@ -137,7 +137,7 @@ public class Datastore {
         }
 
         String aboutMe = (String) userEntity.getProperty("aboutMe");
-        Users user = new Users(email, aboutMe);
+        User user = new User(email, aboutMe);
 
         return user;
     }
