@@ -16,39 +16,40 @@ limitations under the License.
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>User Page</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/user-page.css">
-    <script src="/js/user-page-loader.js"></script>
-  </head>
-  <body onload="buildUI();">
-    <nav>
-      <ul id="navigation">
-        <li><a href="/">Home</a></li>
-      </ul>
-    </nav>
+<head>
+  <title>User Page</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/user-page.css">
+  <script src="/js/user-page-loader.js"></script>
+  <script src="/js/navigation-loader.js"></script>
+</head>
+<body onload="buildUI();">
+<div id="content">
+  <nav id="navigation">
+    <a href="/">Home</a>
+    <a href="/about.html">About our Team</a>
+    <a href="/feed.html">Global Feed</a>
+    <a href="/stats.html">Site Statistics</a>
+  </nav>
+<div class="center">
+  <div class="padded rounded panel center">
     <h1 id="page-title">User Page</h1>
+  </div>
 
+  <div class="padded rounded panel center">
     <form id="message-form" action="/messages" method="POST" class="hidden">
-      Enter a new message:
+      <h2>Enter a new message:</h2>
       <br/>
-      <textarea name="text" id="message-input"></textarea>
+      <textarea name="text" id="message-input" class="rounded"></textarea>
       <br/>
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit" class="rounded">
     </form>
-    <hr/>
+  </div>
+  <hr/>
 
-    <div id="message-container">Loading...</div>
-
-    <div id="about-me-container">Loading...</div>
-      <div id="about-me-form" class="hidden">
-        <form action="/about" method="POST">
-          <textarea name="about-me" placeholder="about me" rows=4 required></textarea>
-          <br/>
-          <input type="submit" value="Submit">
-        </form>
-      </div>
-  </body>
+  <div id="message-container">Loading...</div>
+</div>
+</div>
+</body>
 </html>
