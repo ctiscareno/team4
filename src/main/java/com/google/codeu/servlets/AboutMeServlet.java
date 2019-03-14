@@ -15,10 +15,13 @@ import com.google.appengine.api.users.UserServiceFactory;
 import com.google.codeu.data.Datastore;
 import com.google.codeu.data.User;
 
+
 /**
  * Handles fetching and saving user data.
  */
-@WebServlet("/about") public class AboutMeServlet extends HttpServlet {
+
+@WebServlet("/about")
+public class AboutMeServlet extends HttpServlet {
 
     private Datastore datastore;
 
@@ -41,7 +44,8 @@ import com.google.codeu.data.User;
             //Request is invalid, return empty response
             return;
         }
-
+        
+       
         User userData = datastore.getUser(user);
 
         if(userData == null || userData.getAboutMe() == null) {
@@ -68,5 +72,4 @@ import com.google.codeu.data.User;
 
         response.sendRedirect("/user-page.html?user=" + userEmail);
     }
-}
-
+} 
