@@ -38,6 +38,6 @@ public class StatsPageServlet extends HttpServlet{
     jsonObject.addProperty("messageCount", messageCount);
     response.getOutputStream().println(jsonObject.toString());
    
-     //response.getOutputStream().println("whoa guys I did it bruh");
+     response.getOutputStream().println("whoa guys I did it bruh");
   }
 }
