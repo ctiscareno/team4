@@ -69,4 +69,3 @@ import com.google.codeu.data.User;
         response.sendRedirect("/user-page.html?user=" + userEmail);
     }
 }
-
