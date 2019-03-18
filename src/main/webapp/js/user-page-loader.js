@@ -89,19 +89,15 @@ function fetchMessages() {
 function buildMessageDiv(message) {
   const headerDiv = document.createElement('div');
   headerDiv.classList.add('message-header');
-  headerDiv.classList.add('padded');
-
   headerDiv.appendChild(document.createTextNode(
-      message.user + ' - ' + formatDate(message.timestamp)));
+      message.user + ' - ' + new Date(message.timestamp)));
 
   const bodyDiv = document.createElement('div');
   bodyDiv.classList.add('message-body');
-  bodyDiv.classList.add('padded');
   bodyDiv.innerHTML = message.text;
 
   const messageDiv = document.createElement('div');
-  messageDiv.classList.add('rounded');
-  messageDiv.classList.add('panel');
+  messageDiv.classList.add('message-div');
   messageDiv.appendChild(headerDiv);
   messageDiv.appendChild(bodyDiv);
 
@@ -110,7 +106,6 @@ function buildMessageDiv(message) {
 
 /** Fetches data and populates the UI of the page. */
 function buildUI() {
-  //location.reload(true);
   setPageTitle();
   showMessageFormIfViewingSelf();
   fetchMessages();
@@ -118,7 +113,13 @@ function buildUI() {
 }
 
 function fetchAboutMe(){
-  const url = '/about?user=' + parameterUsername;
+  //const url = '/about?user=' + parameterUsername;
+  const parameterLanguage = urlParams.get('language');
+  let url = '/messages?user=' + parameterUsername;
+  if(parameterLanguage) {
+    url += '&language=' + parameterLanguage;
+  }
+
   fetch(url).then((response) => {
     return response.text();
   }).then((aboutMe) => {
@@ -126,8 +127,23 @@ function fetchAboutMe(){
     if(aboutMe == ''){
       aboutMe = 'This user has not entered any information yet.';
     }
-    
+
     aboutMeContainer.innerHTML = aboutMe;
 
   });
+}
+
+function buildLanguageLinks(){
+  const userPageUrl = '/user-page.html?user=' + parameterUsername;
+  const languagesListElement  = document.getElementById('languages');
+  languagesListElement.appendChild(createListItem(createLink(
+       userPageUrl + '&language=en', 'English')));
+  languagesListElement.appendChild(createListItem(createLink(
+      userPageUrl + '&language=zh', 'Chinese')));
+  languagesListElement.appendChild(createListItem(createLink(
+      userPageUrl + '&language=hi', 'Hindi')));
+  languagesListElement.appendChild(createListItem(createLink(
+      userPageUrl + '&language=es', 'Spanish')));
+  languagesListElement.appendChild(createListItem(createLink(
+      userPageUrl + '&language=ar', 'Arabic')));
 }

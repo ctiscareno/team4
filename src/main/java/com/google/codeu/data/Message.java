@@ -43,6 +43,11 @@ public class Message {
     this.recipient = recipient;
   }
 
+  public void setText(String newText)
+  {
+    text = newText;
+  }
+
   public UUID getId() {
     return id;
   }

@@ -21,6 +21,9 @@ limitations under the License.
   <script src="/js/user-page-loader.js"></script>
   <script src="/js/navigation-loader.js"></script>
 </head>
+
+<ul id="languages"></ul>
+
 <body onload="buildUI();">
 <div id="content">
   <nav id="navigation">
@@ -29,24 +32,24 @@ limitations under the License.
     <a href="/feed.html">Global Feed</a>
     <a href="/stats.html">Site Statistics</a>
   </nav>
-<div class="center">
-  <div class="padded rounded panel center">
-    <h1 id="page-title">User Page</h1>
-  </div>
+  <div class="center">
+    <div class="padded rounded panel center">
+      <h1 id="page-title">User Page</h1>
+    </div>
 
-  <div class="padded rounded panel center">
-    <form id="message-form" action="/messages" method="POST" class="hidden">
-      <h2>Enter a new message:</h2>
-      <br/>
-      <textarea name="text" id="message-input" class="rounded"></textarea>
-      <br/>
-      <input type="submit" value="Submit" class="rounded">
-    </form>
-  </div>
-  <hr/>
+    <div class="padded rounded panel center">
+      <form id="message-form" action="/messages" method="POST" class="hidden">
+        <h2>Enter a new message:</h2>
+        <br/>
+        <textarea name="text" id="message-input" class="rounded"></textarea>
+        <br/>
+        <input type="submit" value="Submit" class="rounded">
+      </form>
+    </div>
+    <hr/>
 
-  <div id="message-container">Loading...</div>
-</div>
+    <div id="message-container">Loading...</div>
+  </div>
 </div>
 </body>
 </html>
