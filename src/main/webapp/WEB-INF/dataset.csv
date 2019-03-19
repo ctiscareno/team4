@@ -88,11 +88,11 @@
 109,Hit by vehicle,Horn of Africa,,Europe,24/07/2015,50.1487,1.88965
 111,Presumed drowning,,,Mediterranean,02/05/2015,35.4607,14.4141
 112,,South East Asia,,Southeast Asia,01/05/2015,7.18977,100.595
-113,"Unknown torture involved",South East Asia,,Southeast Asia,25/05/2015,6.44491,100.5785352
+113,Unknown torture involved,South East Asia,,Southeast Asia,25/05/2015,6.44491,100.5785352
 114,Train accident,MENA,,Europe,24/04/2015,41.5579,21.8188
 119,Drowning,Central America & Mexico,,U.S./Mexico Border,21/04/2015,27.49541266,-99.52264916
 120,Drowning,,,Mediterranean,20/04/2015,36.35278241,27.93825898
-121,"Drowning, Asphyxiation",,,Mediterranean,18/04/2015,35.03,14.6777
+121,Drowning Asphyxiation,,,Mediterranean,18/04/2015,35.03,14.6777
 122,Burns from cooking gas explosion in connection house in Libya,Sub-Saharan Africa,,Mediterranean,17/04/2015,35.1738,17.2266
 123,Drowning,Sub-Saharan Africa,,Mediterranean,16/04/2015,35.7465,14.4141
 124,Drowning after being thrown overboard by other passengers,Sub-Saharan Africa,12,Mediterranean,16/04/2015,34.8859,14.4141
@@ -114,7 +114,7 @@
 148,Drowning,,,North Africa,08/03/2015,29.5145,-12.7687
 150,Drowning,,40,Mediterranean,03/03/2015,36.0313,13.3594
 151,Drowning,Central America & Mexico,,Central America incl. Mexico,09/03/2015,17.4987,-91.9804
-156,"Unclear, possibly related to earlier beating by truck driver",Horn of Africa,,Europe,14/02/2015,50.9513,1.85869
+156,Unclear possibly related to earlier beating by truck driver,Horn of Africa,,Europe,14/02/2015,50.9513,1.85869
 157,Drowning,Sub-Saharan Africa,103,Mediterranean,09/02/2015,34.2935,12.6672
 158,Drowning,Sub-Saharan Africa,100,Mediterranean,09/02/2015,34.3616,12.9858
 159,Drowning,Sub-Saharan Africa,104,Mediterranean,09/02/2015,34.3797,12.8101
@@ -167,7 +167,7 @@
 226,Drowning,Horn of Africa,,Horn of Africa,16/10/2014,12.6082,48.8232
 229,Drowning,,4,Southeast Asia,14/10/2014,9.00988,98.2892
 230,,Central America,,U.S./Mexico Border,12/10/2014,31.7146,-111.438
-231,"Hyperthermia, starvation",,,Mediterranean,10/10/2014,35.898,15.4907
+231,Hyperthermia starvation,,,Mediterranean,10/10/2014,35.898,15.4907
 233,Presumed drowning,Caribbean,2,Caribbean,05/10/2014,25.7529,-79.8528
 234,Drowning,Horn of Africa,,Horn of Africa,02/10/2014,12.7047,49.4824
 235,Drowning,Sub-Saharan Africa,85,Mediterranean,02/10/2014,33.5963,14.6338
@@ -193,7 +193,7 @@
 256,Presumed drowning,East Asia,9,Southeast Asia,09/09/2014,22.2344,113.643
 257,Drowning,MENA,,Mediterranean,29/08/2014,33.5111,11.8652
 258,Presumed drowning,Caribbean,23,Caribbean,28/08/2014,18.3459,-67.8186
-259,"Dehydration, Presumed drowning",Caribbean,6,Caribbean,28/08/2014,23.6244,-86.2866
+259,Dehydration Presumed drowning,Caribbean,6,Caribbean,28/08/2014,23.6244,-86.2866
 260,Drowning,Caribbean,,Caribbean,25/08/2014,26.2937,-80.0615
 261,Unknown (skeletal remains),Central America,,U.S./Mexico Border,25/08/2014,31.7552,-111.833
 262,Drowning,,,Mediterranean,24/08/2014,34.5671,14.0625
@@ -204,7 +204,7 @@
 267,Drowning,Sub-Saharan Africa,81,Mediterranean,22/08/2014,32.9212,13.7659
 268,Hyperthermia,Central America,,U.S./Mexico Border,21/08/2014,32.1816,-112.424
 269,Unknown (skeletal remains),Central America,,U.S./Mexico Border,18/08/2014,32.1991,-112.155
-270,"Homicide, likely by asphyxiation",South Asia,,Europe,16/08/2014,51.4616,0.345211
+270,Homicide likely by asphyxiation,South Asia,,Europe,16/08/2014,51.4616,0.345211
 271,Unknown (skeletal remains),Central America,,U.S./Mexico Border,05/08/2014,31.7938,-112.231
 272,Unknown (skeletal remains),Central America,,U.S./Mexico Border,05/08/2014,31.7155,-112.144
 273,Unknown (skeletal remains),Central America,,U.S./Mexico Border,05/08/2014,32.0302,-111.747
@@ -281,7 +281,7 @@
 346,Unknown (skeletal remains),Central America,,U.S./Mexico Border,13/05/2014,32.1607,-111.855
 347,Drowning,Sub-Saharan Africa,200,Mediterranean,12/05/2014,34.7086,15.6665
 348,Blunt force injuries,Central America,,U.S./Mexico Border,10/05/2014,32.0654,-111.3052083
-349,"Starvation, Dehydration, Exhaustion",Sub-Saharan Africa,33,North Africa,09/05/2014,20.086,5.18555
+349,Starvation Dehydration Exhaustion,Sub-Saharan Africa,33,North Africa,09/05/2014,20.086,5.18555
 350,Unknown (skeletal remains),Central America,,U.S./Mexico Border,08/05/2014,32.0456,-111.2807834
 351,,Horn of Africa,,Mediterranean,07/05/2014,35.8196,11.7554
 352,Unknown (skeletal remains),Central America,,U.S./Mexico Border,06/05/2014,32.13633713,-111.4099895
@@ -303,7 +303,7 @@
 368,,Central America,,U.S./Mexico Border,14/04/2014,32.11650223,-111.4944827
 369,Unknown (skeletal remains),Central America,,U.S./Mexico Border,14/04/2014,32.19563524,-111.5666025
 370,Unknown (skeletal remains),Central America,,U.S./Mexico Border,14/04/2014,32.17472481,-111.4080442
-371,"Hyperthermia, Abandoned by smugglers in the desert",Horn of Africa,,North Africa,14/04/2014,23.3112,21.8569
+371,Hyperthermia Abandoned by smugglers in the desert,Horn of Africa,,North Africa,14/04/2014,23.3112,21.8569
 372,Unknown (skeletal remains),Central America,,U.S./Mexico Border,10/04/2014,32.0397,-111.633
 373,Unknown (skeletal remains),Central America,,U.S./Mexico Border,10/04/2014,31.9967,-111.787
 374,Drowning,Sub-Saharan Africa,,Sub-Saharan Africa,09/04/2014,-23.8148,32.4884
@@ -358,7 +358,7 @@
 423,Unknown (skeletal remains),Central America,,U.S./Mexico Border,14/01/2014,32.0875,-111.92
 424,Unknown (skeletal remains),Central America,,U.S./Mexico Border,12/01/2014,32.16736488,-111.5538833
 425,Unknown (skeletal remains),Central America,,U.S./Mexico Border,06/01/2014,32.1848005,-111.5154312
-427,"Mostly starvation, dehydration, and beatings by crew members",South East Asia,750,Southeast Asia,30/12/2014,13.5317,87.5396
+427,Mostly starvation dehydration and beatings by crew members,South East Asia,750,Southeast Asia,30/12/2014,13.5317,87.5396
 428,Mixed,Central America,,Central America incl. Mexico,30/10/2014,23.6345,-102.553
 430,Mixed,Central America,,Central America incl. Mexico,30/08/2014,19.1452,-101.074
 432,Drowning,MENA,4,Mediterranean,13/09/2015,37.2948,27.1199
@@ -378,7 +378,7 @@
 455,Drowning,Middle East/ South Asia,,Mediterranean,02/09/2015,39.3962,26.1349
 456,Unknown (bodies recovered from boat),Sub-Saharan Africa,,Mediterranean,01/09/2015,33.71517056,16.19389141
 458,Killed,MENA,,Mediterranean,29/08/2015,36.58248021,27.90391909
-459,"Suffocation, Trampled",Sub-Saharan Africa,,Mediterranean,28/08/2015,35.2811,12.3147
+459,Suffocation Trampled,Sub-Saharan Africa,,Mediterranean,28/08/2015,35.2811,12.3147
 461,,,,Mediterranean,27/08/2015,36.7546,16.1817
 462,,,,Mediterranean,31/08/2015,35.5054,15.9741
 463,Pulmonary edema,Horn of Africa,,Mediterranean,31/08/2015,39.1319,26.5171
@@ -396,7 +396,7 @@
 477,Drowning,South Asia,,Mediterranean,17/08/2015,35.8267,35.1617
 479,Unknown (body recovered from boat),Horn of Africa,,Mediterranean,16/08/2015,37.51841097,16.84201133
 483,Presumed drowning,MENA,,Mediterranean,10/07/2015,36.4566,11.4258
-484,"Drowning, Trampling",,,Mediterranean,09/07/2015,34.9129369,14.86451445
+484,Drowning Trampling,,,Mediterranean,09/07/2015,34.9129369,14.86451445
 486,Drowning,Sub-Saharan Africa,60,Mediterranean,10/08/2015,34.4722,13.3264
 492,Presumed asphyxiation,Sub-Saharan Africa,,Mediterranean,15/08/2015,34.2708,15.0073
 493,Vehicle accident,MENA,,Middle East,08/08/2015,39.6533,27.8903
@@ -411,7 +411,7 @@
 509,Drowning,Horn of Africa,,Europe,19/07/2015,50.9513,1.85869
 510,,MENA,,Mediterranean,16/07/2015,,
 511,Hit by vehicle,South Asia,,Europe,25/10/2015,50.9513,1.85869
-512,"Gylcemic crisis (Diabetic, medicine thrown overboard)",MENA,,Mediterranean,15/07/2015,35.1738,15.8203
+512,Gylcemic crisis (Diabetic medicine thrown overboard),MENA,,Mediterranean,15/07/2015,35.1738,15.8203
 515,Drowning,,,Mediterranean,14/07/2015,32.8279,13.3818
 516,Hit by vehicle,MENA,,Europe,13/07/2015,51.0179,1.47455
 518,Drowning,,15,Mediterranean,07/07/2015,37.3511,27.0371
@@ -434,7 +434,7 @@
 555,Drowning,Sub-Saharan Africa,,Sub-Saharan Africa,20/05/2015,-13.2081,47.9846
 556,Sickness,South Asia,,Southeast Asia,19/05/2015,4.718780353,97.93178516
 559,Drowning,South Asia,,Southeast Asia,23/05/2015,19.7357,93.5101
-561,"Drowning, Other",Sub-Saharan Africa,41,Mediterranean,04/05/2015,36.5626,14.1119
+561,Drowning Other,Sub-Saharan Africa,41,Mediterranean,04/05/2015,36.5626,14.1119
 562,Drowning,,,Mediterranean,02/05/2015,31.6534,31.2891
 564,Drowning,,,Mediterranean,03/01/2015,35.90898311,-1.592286656
 565,Vehicle accident,Sub-Saharan Africa,,North Africa,19/01/2015,32.58155614,13.17870405
@@ -456,7 +456,7 @@
 3764,,MENA,,Europe,12/11/2015,46.55268839,15.66343926
 3765,Shot,MENA,,North Africa,14/11/2015,31.24170312,34.23581094
 3766,Shot,MENA,,North Africa,05/11/2015,30.69161712,34.49949883
-4564,"Drowning, Asphyxiation",,2,Mediterranean,17/11/2015,36.89331134,27.30757378
+4564,Drowning Asphyxiation,,2,Mediterranean,17/11/2015,36.89331134,27.30757378
 4566,,,,,,33.51693224,15.35827629
 5763,Drowning,MENA,,Mediterranean,16/11/2015,31.59428651,29.9182
 6563,Suffocation,,,Europe,16/11/2015,52.78314844,-1.679280353
@@ -554,7 +554,7 @@
 20569,Shot,Central America,,Central America incl. Mexico,28/09/2015,18.80138941,-96.0656674
 20570,,Central America,,U.S./Mexico Border,06/11/2015,31.30861904,-110.9421663
 20571,drowning,MENA,,Mediterranean,18/01/2016,37.57999603,26.49138815
-20963,"Unknown, plane stowaway",Sub-Saharan Africa,,Europe,18/06/2015,51.47114986,-0.456486554
+20963,Unknown plane stowaway,Sub-Saharan Africa,,Europe,18/06/2015,51.47114986,-0.456486554
 21363,Drowning,,8,Mediterranean,17/01/2016,37.33332792,11.33332674
 21364,Attacked by hippopotamus,Sub-Saharan Africa,,Sub-Saharan Africa,30/12/2015,-22.21666924,29.9999968
 21763,Drowning,MENA,,Mediterranean,20/01/2016,37.2892187,27.09385399
@@ -608,15 +608,15 @@
 28576,Drowning,Central America & Mexico,,U.S./Mexico Border,21/10/2015,29.88977145,-102.3415979
 28977,Presumed drowning,Sub-Saharan Africa,19,Sub-Saharan Africa,27/09/2015,-12.65491926,44.72022159
 29777,,Central America & Mexico,,Central America incl. Mexico,01/01/2016,29.35166167,-107.1855449
-29778,"Exposure, Hypothermia",MENA,,Europe,19/01/2016,43.14447284,23.00048828
+29778,Exposure Hypothermia,MENA,,Europe,19/01/2016,43.14447284,23.00048828
 29779,Hypothermia,MENA,,Middle East,24/01/2016,33.97499693,35.66749588
 29780,Hypothermia,MENA,,Middle East,24/01/2016,33.833327,35.83332867
-30177,"Exposure, hypothermia",MENA,,Europe,22/01/2016,42.9035202,22.78076172
+30177,Exposure hypothermia,MENA,,Europe,22/01/2016,42.9035202,22.78076172
 30178,Hypothermia,South Asia,,Europe,06/02/2016,41.97913831,27.52491759
 30179,Landmine,South America,,South America,06/02/2016,-1.035485418,-74.28613281
 30180,Drowning,MENA,9,Mediterranean,07/02/2016,39.11524487,26.63085859
-30181,"Hypothermia, Malnutrition",MENA,,Middle East,07/02/2016,36.20654691,36.15721892
-30182,"Exposure, hypothermia",South Asia,,Middle East,27/01/2016,39.9086069,41.27693661
+30181,Hypothermia Malnutrition,MENA,,Middle East,07/02/2016,36.20654691,36.15721892
+30182,Exposure hypothermia,South Asia,,Middle East,27/01/2016,39.9086069,41.27693661
 30183,Vehicle accident,South Asia,,Middle East,17/10/2015,35.19929345,51.02050602
 30577,Drowning,Sub-Saharan Africa,,North Africa,01/02/2016,25.82230759,-16.7523272
 30977,Drowning,South Asia,,Europe,09/02/2016,50.96865793,1.843807254
@@ -698,7 +698,7 @@
 48979,Unknown (found dead near train tracks),Central America,,Central America incl. Mexico,18/03/2016,21.06534074,-101.6334381
 49377,Drowning,MENA,,Mediterranean,14/04/2016,38.45484192,27.05853886
 49777,Hit by vehicle,Central America & Mexico,,U.S./Mexico Border,18/03/2016,30.25210496,-97.7358722
-50577,"AH1N1 influenza virus, while stuck at border",Caribbean,,Central America incl. Mexico,03/01/2016,9.370277058,-82.91137395
+50577,AH1N1 influenza virus while stuck at border,Caribbean,,Central America incl. Mexico,03/01/2016,9.370277058,-82.91137395
 50978,Drowning,Central America & Mexico,,Central America incl. Mexico,13/10/2015,26.10209127,-98.30425898
 51377,Hit by train,Central America,,Central America incl. Mexico,09/09/2015,27.46166501,-99.69148329
 51778,Drowning,Mixed,24,Mediterranean,16/04/2016,35.57684837,12.81494549
@@ -731,7 +731,7 @@
 57377,Vehicle accident,Central America & Mexico,,Central America incl. Mexico,04/07/2015,16.35781146,-94.75846827
 57777,Unknown (skeletal remains),,,U.S./Mexico Border,04/01/2016,31.41387,-111.00431
 57778,Unknown (skeletal remains),,,U.S./Mexico Border,04/01/2016,31.9148,-112.54042
-57779,"Exposure, Hypothermia",Central America & Mexico,,U.S./Mexico Border,08/01/2016,32.15383063,-111.2350326
+57779,Exposure Hypothermia,Central America & Mexico,,U.S./Mexico Border,08/01/2016,32.15383063,-111.2350326
 57780,,Central America,,U.S./Mexico Border,16/01/2016,32.94781908,-112.7168268
 57781,Unknown (skeletal remains),Central America & Mexico,,U.S./Mexico Border,24/01/2016,31.8769,-111.78898
 57782,Unknown (skeletal remains),Central America & Mexico,,U.S./Mexico Border,25/01/2016,32.29187,-113.1067
@@ -740,7 +740,7 @@
 57785,,Central America & Mexico,,U.S./Mexico Border,06/03/2016,32.15192,-113.069
 57786,Unknown (skeletal remains),Central America,,U.S./Mexico Border,17/03/2016,32.23033994,-112.7215917
 57787,Unknown (skeletal remains),Central America,,U.S./Mexico Border,31/03/2016,32.423462,-113.138344
-57788,"Exposure, Hypothermia",Central America,,U.S./Mexico Border,06/04/2016,31.95437,-112.14965
+57788,Exposure Hypothermia,Central America,,U.S./Mexico Border,06/04/2016,31.95437,-112.14965
 57789,,Central America,,U.S./Mexico Border,17/04/2016,32.9074752,-112.7786249
 57790,,Central America,,U.S./Mexico Border,22/04/2016,32.77637925,-113.531758
 58177,Unknown (skeletal remains),Central America & Mexico,,U.S./Mexico Border,30/01/2016,31.50523739,-111.4903785
@@ -748,7 +748,7 @@
 58179,Unknown (skeletal remains),Central America & Mexico,,U.S./Mexico Border,02/03/2016,32.20324,-112.95431
 58180,Unknown (skeletal remains),Central America,,U.S./Mexico Border,02/03/2016,31.826717,-112.1373
 58181,Unknown (skeletal remains),Central America & Mexico,,U.S./Mexico Border,05/03/2016,32.38652,-113.10317
-58182,"Exposure, Hypothermia",Central America & Mexico,,U.S./Mexico Border,06/03/2016,32.2651,-113.10296
+58182,Exposure Hypothermia,Central America & Mexico,,U.S./Mexico Border,06/03/2016,32.2651,-113.10296
 58183,Unknown (skeletal remains),,,U.S./Mexico Border,19/03/2016,32.06475944,-111.4167411
 58184,Unknown (skeletal remains),Central America & Mexico,,U.S./Mexico Border,31/03/2016,32.329483,-112.115617
 58185,Unknown (skeletal remains),,,U.S./Mexico Border,06/04/2016,31.88803021,-111.3937707
@@ -911,7 +911,7 @@
 81777,Drowning,South Asia,2,East Asia,09/07/2016,22.43443772,113.7999981
 81778,Hit by train,Central America,,Central America incl. Mexico,28/06/2016,18.31999764,-95.82147286
 81779,Unknown (skeletal remains),Central America,,U.S./Mexico Border,30/05/2016,32.00500549,-112.0638804
-81780,"Unknown, Skeletal Remains",Central America,,U.S./Mexico Border,30/05/2016,32.00034716,-112.0034556
+81780,Unknown Skeletal Remains,Central America,,U.S./Mexico Border,30/05/2016,32.00034716,-112.0034556
 81781,Unknown (skeletal remains),Central America,,U.S./Mexico Border,30/05/2016,31.99568859,-112.1133189
 81782,Hit by vehicle,Central America & Mexico,,Central America incl. Mexico,24/05/2016,29.32022635,-100.9707057
 81783,Fell from train,Central America & Mexico,,Central America incl. Mexico,13/05/2016,19.57240012,-99.2214707
@@ -1099,7 +1099,7 @@
 106578,Heart attack,Central America & Mexico,,Central America incl. Mexico,07/09/2016,16.37142996,-94.17952664
 106977,,Caribbean,,South America,13/08/2016,0.818879679,-77.65796096
 107377,Heart attack,Caribbean,,South America,18/08/2016,1.214979592,-77.27535714
-107378,"Pulmonary edema, Kidney failure",Caribbean,,South America,26/08/2016,8.245085111,-77.23693451
+107378,Pulmonary edema Kidney failure,Caribbean,,South America,26/08/2016,8.245085111,-77.23693451
 107379,Drowning,Central America,,U.S./Mexico Border,07/09/2016,27.49821539,-99.50643233
 107380,,,,Europe,09/09/2016,37.27231066,-6.817909362
 107381,Drowning,Central America,,U.S./Mexico Border,09/09/2016,27.50387999,-99.527649
@@ -1110,7 +1110,7 @@
 107777,Mixed,Central America,,U.S./Mexico Border,18/09/2016,27.6669572,-99.37484514
 108177,,Central America & Mexico,,U.S./Mexico Border,15/09/2016,25.81895983,-103.2839323
 108178,Stabbed,South Asia,,Europe,18/09/2016,38.22412836,21.72282021
-108179,"Hunger, fatigue",Sub-Saharan Africa,,Mediterranean,19/09/2016,37.50684357,9.118345144
+108179,Hunger fatigue,Sub-Saharan Africa,,Mediterranean,19/09/2016,37.50684357,9.118345144
 108577,Drowning,,84,Mediterranean,20/09/2016,31.90803006,30.1383932
 108977,Fell from train,Central America & Mexico,,Central America incl. Mexico,20/09/2016,18.61253413,-95.66012733
 109377,Hit by train,North Africa,,Europe,23/09/2016,50.94598453,1.916248447
@@ -1129,7 +1129,7 @@
 111380,,,,Mediterranean,02/10/2016,33.80267739,14.97851352
 111381,Drowning,Mixed,,Mediterranean,02/10/2016,32.80546847,12.54475117
 111382,Asphyxiation,,,Mediterranean,03/10/2016,35.07116239,14.01171665
-111383,"Dehydration, Asphyxiation",Central America,,Central America incl. Mexico,03/10/2016,18.21023043,-96.1228914
+111383,Dehydration Asphyxiation,Central America,,Central America incl. Mexico,03/10/2016,18.21023043,-96.1228914
 111777,,,,,,24.0633429,29.8303125
 111778,,,,,,48.17841238,11.81273438
 111779,,,,,,35.26071343,51.01195313
@@ -1193,7 +1193,7 @@
 117778,Drowning,Mixed,10,Mediterranean,20/10/2016,32.57054562,15.58176305
 118177,Plane Stowaway,Sub-Saharan Africa,,Middle East,20/09/2016,21.50016966,39.18552008
 118178,Drowning,,,Mediterranean,08/10/2016,32.80085126,12.5255251
-118179,"Drowning, Asphyxiation",Mixed,30,Mediterranean,21/10/2016,33.25317816,15.2421854
+118179,Drowning Asphyxiation,Mixed,30,Mediterranean,21/10/2016,33.25317816,15.2421854
 118180,Mixed,Central America & Mexico,,Central America incl. Mexico,22/10/2016,19.14634505,-98.4843723
 118577,,Horn of Africa,,Horn of Africa,20/10/2016,11.95432556,43.27819781
 118977,Fuel Inhalation,Mixed,,Mediterranean,24/10/2016,33.03240315,14.84667758
@@ -1234,13 +1234,13 @@
 122978,Drowning,Central America & Mexico,,U.S./Mexico Border,22/10/2016,28.78656699,-100.5388075
 122979,Drowning,Middle East/ South Asia,,Mediterranean,03/11/2016,37.79591132,26.69108355
 122980,,,,Mediterranean,04/11/2016,34.63842453,14.58300571
-122981,"Hyperthermia, Dehydration",Central America & Mexico,,U.S./Mexico Border,20/04/2016,29.10506945,-110.944694
+122981,Hyperthermia Dehydration,Central America & Mexico,,U.S./Mexico Border,20/04/2016,29.10506945,-110.944694
 123377,Fell from train,Central America & Mexico,,Central America incl. Mexico,13/10/2016,21.30885493,-102.1725268
 123378,Drowning,Central America & Mexico,,U.S./Mexico Border,21/10/2016,26.07164192,-98.24756781
 123379,Drowning,Central America & Mexico,,U.S./Mexico Border,03/11/2016,27.46044645,-99.48892287
 123380,,Sub-Saharan Africa,12,Mediterranean,04/11/2016,34.14888204,13.98974399
 123381,Drowning,Sub-Saharan Africa,,Mediterranean,05/11/2016,32.89571541,14.26602974
-123777,"Drowning, Asphyxiation",Central America & Mexico,,U.S./Mexico Border,16/06/2016,28.19378763,-100.2239233
+123777,Drowning Asphyxiation,Central America & Mexico,,U.S./Mexico Border,16/06/2016,28.19378763,-100.2239233
 124177,Drowning,Central America & Mexico,,U.S./Mexico Border,12/08/2016,25.88549113,-97.51201242
 124577,Drowning,Mixed,22,Mediterranean,08/11/2016,33.58329684,13.46240024
 125377,Road accident,South Asia,,Europe,15/07/2015,50.93723527,1.890963574
@@ -1363,7 +1363,7 @@
 134626,Sickness_and_lack_of_access_to_medicines,Horn of Africa (P),,North Africa,17/02/2016,30.21472168,20.14031982
 134627,Sickness_and_lack_of_access_to_medicines,Horn of Africa (P),,North Africa,17/02/2016,23.30908203,21.85369873
 134628,Sickness_and_lack_of_access_to_medicines,Horn of Africa (P),,North Africa,18/02/2016,18.73608398,28.65228272
-134629,"Starvation, Dehydration",Horn of Africa (P),,Horn of Africa,18/02/2016,17.703125,38.36669922
+134629,Starvation Dehydration,Horn of Africa (P),,Horn of Africa,18/02/2016,17.703125,38.36669922
 134630,Vehicle_Accident,Horn of Africa (P),,Sub-Saharan Africa,18/02/2016,-9.040710449,32.96307373
 134631,Harsh_weather_lack_of_adequate_shelter,Horn of Africa (P),,North Africa,18/02/2016,15.47369385,36.41687012
 134632,Sickness_and_lack_of_access_to_medicines,Horn of Africa (P),,North Africa,18/02/2016,30.21472168,20.14031982
@@ -1377,7 +1377,7 @@
 134640,Sickness_and_lack_of_access_to_medicines,Horn of Africa (P),,North Africa,18/02/2016,22.03088379,23.95031738
 134641,Shot_or_Stabbed,Horn of Africa (P),,North Africa,18/02/2016,14.27587891,33.51391602
 134642,Sickness_and_lack_of_access_to_medicines,Horn of Africa (P),,North Africa,18/02/2016,23.2769165,21.8270874
-134643,"Suffocation, Other",Horn of Africa (P),,North Africa,19/02/2016,27.73370361,30.79071045
+134643,Suffocation Other,Horn of Africa (P),,North Africa,19/02/2016,27.73370361,30.79071045
 134644,Vehicle_Accident,Horn of Africa (P),,North Africa,19/02/2016,15.44732666,32.57867432
 134645,Sickness_and_lack_of_access_to_medicines,Horn of Africa (P),,North Africa,20/02/2016,24.08892822,32.89990234
 134646,Sickness_and_lack_of_access_to_medicines,Horn of Africa (P),,North Africa,21/02/2016,23.79089356,32.74212647
@@ -1495,16 +1495,16 @@
 134758,Harsh_weather_lack_of_adequate_shelter Excessive_physical_abuse Sexual_abuse,Horn of Africa (P),,North Africa,11/06/2016,19.53570557,33.32067871
 134759,Sickness_and_lack_of_access_to_medicines,Horn of Africa (P),,Horn of Africa,12/06/2016,9.312683105,42.12268066
 134760,Excessive_physical_abuse,Horn of Africa (P),,North Africa,13/06/2016,14.09887695,33.22570801
-134761,"Sickness_and_lack_of_access_to_medicines, Dehydration",Horn of Africa (P),,Horn of Africa,14/06/2016,9.525878906,45.534729
-134762,"Harsh_weather_lack_of_adequate_shelter, Suffocation, Excessive_physical_abuse, Sexual_abuse",Horn of Africa (P),,North Africa,14/06/2016,19.54730225,33.14428711
+134761,Sickness_and_lack_of_access_to_medicines Dehydration,Horn of Africa (P),,Horn of Africa,14/06/2016,9.525878906,45.534729
+134762,Harsh_weather_lack_of_adequate_shelter Suffocation Excessive_physical_abuse Sexual_abuse,Horn of Africa (P),,North Africa,14/06/2016,19.54730225,33.14428711
 134763,Sickness_and_lack_of_access_to_medicines Dehydration Harsh_weather_lack_of_adequate_shelter,Horn of Africa (P),,North Africa,14/06/2016,22.42272949,31.61187744
 134764,Vehicle_Accident,Horn of Africa (P),,North Africa,15/06/2016,15.50067139,32.55987549
 134765,Vehicle_Accident,Horn of Africa (P),,North Africa,15/06/2016,17.70269775,34.04168701
 134766,Sickness_and_lack_of_access_to_medicines,Horn of Africa (P),,North Africa,17/06/2016,15.75567627,32.66192627
 134767,Harsh_weather_lack_of_adequate_shelter Suffocation,Horn of Africa (P),,North Africa,17/06/2016,23.94470215,32.68151856
 134768,Shot_or_Stabbed,Horn of Africa (P),,Horn of Africa,17/06/2016,15.60992432,37.33673096
-134769,"Sickness_and_lack_of_access_to_medicines, Starvation, Dehydration, Excessive_physical_abuse, Sexual_abuse",Horn of Africa (P),,North Africa,17/06/2016,23.92132568,32.63751221
-134770,"Sickness_and_lack_of_access_to_medicines, Dehydration",Horn of Africa (P),,Horn of Africa,20/06/2016,9.469726562,45.61291504
+134769,Sickness_and_lack_of_access_to_medicines Starvation Dehydration Excessive_physical_abuse Sexual_abuse,Horn of Africa (P),,North Africa,17/06/2016,23.92132568,32.63751221
+134770,Sickness_and_lack_of_access_to_medicines Dehydration,Horn of Africa (P),,Horn of Africa,20/06/2016,9.469726562,45.61291504
 134771,Vehicle_Accident,Horn of Africa (P),,Horn of Africa,20/06/2016,12.95288086,36.15527344
 134772,Vehicle_Accident,Horn of Africa (P),,North Africa,20/06/2016,23.83947754,32.67547607
 134773,Harsh_weather_lack_of_adequate_shelter Suffocation Vehicle_Accident,Horn of Africa (P),,North Africa,20/06/2016,17.79089356,34.01647949
@@ -1541,7 +1541,7 @@
 134805,Harsh_weather_lack_of_adequate_shelter Suffocation Vehicle_Accident,Horn of Africa (P),,North Africa,01/08/2016,19.53570557,33.32067871
 134806,Starvation Harsh_weather_lack_of_adequate_shelter Suffocation Excessive_physical_abuse,Horn of Africa (P),,North Africa,01/08/2016,23.34350586,32.09631348
 134807,Sickness_and_lack_of_access_to_medicines Starvation Harsh_weather_lack_of_adequate_shelter Suffocation Excessive_physical_abuse Sexual_abuse,Horn of Africa (P),,North Africa,04/08/2016,19.53570557,33.32067871
-134808,"Sickness_and_lack_of_access_to_medicines, Dehydration, Harsh_weather_lack_of_adequate_shelter",Horn of Africa (P),,North Africa,11/08/2016,24.08892822,32.89990234
+134808,Sickness_and_lack_of_access_to_medicines Dehydration Harsh_weather_lack_of_adequate_shelter,Horn of Africa (P),,North Africa,11/08/2016,24.08892822,32.89990234
 134809,Shot_or_Stabbed,Horn of Africa (P),,Horn of Africa,11/08/2016,15.70251465,36.98651123
 134810,Harsh_weather_lack_of_adequate_shelter Excessive_physical_abuse,Horn of Africa (P),,North Africa,11/08/2016,14.09887695,33.22570801
 134811,Vehicle_Accident,Horn of Africa (P),,North Africa,13/08/2016,14.0402832,35.36987305
@@ -1630,19 +1630,19 @@
 135377,,Central America & Mexico,,U.S./Mexico Border,02/09/2016,32.65115867,-115.8291404
 135777,Presumed drowning,Mixed,87,Mediterranean,12/12/2016,32.79748147,12.81852309
 136177,Shot_or_Stabbed,Horn of Africa,,Horn of Africa,31/10/2016,15.90007747,36.84667885
-136178,"Sickness_and_lack_of_access_to_medicines, Starvation, Harsh_weather_lack_of_adequate_shelter, Excessive_physical_abuse, Sexual_abuse",Horn of Africa,,North Africa,06/11/2016,14.08196629,35.44887651
-136179,"Sickness_and_lack_of_access_to_medicines, Starvation, Harsh_weather_lack_of_adequate_shelter, Excessive_physical_abuse, Sexual_abuse",Horn of Africa,,North Africa,06/11/2016,15.55342253,32.55747064
-136180,"Sickness_and_lack_of_access_to_medicines, Starvation, Harsh_weather_lack_of_adequate_shelter, Excessive_physical_abuse, Sexual_abuse",Horn of Africa,,North Africa,06/11/2016,19.47343973,30.3515593
-136181,"Sickness_and_lack_of_access_to_medicines, Harsh_weather_lack_of_adequate_shelter, Vehicle_Accident",Horn of Africa,,North Africa,10/11/2016,19.5397971,33.42103611
-136182,"Sickness_and_lack_of_access_to_medicines, Starvation, Excessive_physical_abuse, Sexual_abuse",Horn of Africa,,Horn of Africa,13/11/2016,12.03332849,36.94999907
+136178,Sickness_and_lack_of_access_to_medicines Starvation Harsh_weather_lack_of_adequate_shelter Excessive_physical_abuse Sexual_abuse,Horn of Africa,,North Africa,06/11/2016,14.08196629,35.44887651
+136179,Sickness_and_lack_of_access_to_medicines Starvation Harsh_weather_lack_of_adequate_shelter Excessive_physical_abuse Sexual_abuse,Horn of Africa,,North Africa,06/11/2016,15.55342253,32.55747064
+136180,Sickness_and_lack_of_access_to_medicines Starvation Harsh_weather_lack_of_adequate_shelter Excessive_physical_abuse Sexual_abuse,Horn of Africa,,North Africa,06/11/2016,19.47343973,30.3515593
+136181,Sickness_and_lack_of_access_to_medicines Harsh_weather_lack_of_adequate_shelter Vehicle_Accident,Horn of Africa,,North Africa,10/11/2016,19.5397971,33.42103611
+136182,Sickness_and_lack_of_access_to_medicines Starvation Excessive_physical_abuse Sexual_abuse,Horn of Africa,,Horn of Africa,13/11/2016,12.03332849,36.94999907
 136183,Sexual_abuse,Horn of Africa,,North Africa,13/11/2016,14.43841667,33.43954843
 136184,Excessive_physical_abuse,Horn of Africa,,North Africa,13/11/2016,23.97678575,32.92214204
 136577,Other,Horn of Africa,,North Africa,06/11/2016,27.18187604,31.16222209
-136578,"Sickness_and_lack_of_access_to_medicines, Starvation, Harsh_weather_lack_of_adequate_shelter, Excessive_physical_abuse, Sexual_abuse",Horn of Africa,,North Africa,06/11/2016,13.50464869,33.53610605
+136578,Sickness_and_lack_of_access_to_medicines Starvation Harsh_weather_lack_of_adequate_shelter Excessive_physical_abuse Sexual_abuse,Horn of Africa,,North Africa,06/11/2016,13.50464869,33.53610605
 136579,Sickness_and_lack_of_access_to_medicines Starvation Harsh_weather_lack_of_adequate_shelter Excessive_physical_abuse Sexual_abuse,Horn of Africa,,North Africa,06/11/2016,24.02398857,32.95012284
 136580,Other,Horn of Africa,,North Africa,13/11/2016,18.08312027,33.94414886
-136581,"Sickness_and_lack_of_access_to_medicines, Starvation, Harsh_weather_lack_of_adequate_shelter, Vehicle_Accident, Excessive_physical_abuse",Horn of Africa,,North Africa,13/11/2016,19.86962853,32.50487961
-136582,"Sickness_and_lack_of_access_to_medicines, Starvation",Horn of Africa,,North Africa,13/11/2016,17.82771793,34.00560363
+136581,Sickness_and_lack_of_access_to_medicines Starvation Harsh_weather_lack_of_adequate_shelter Vehicle_Accident Excessive_physical_abuse,Horn of Africa,,North Africa,13/11/2016,19.86962853,32.50487961
+136582,Sickness_and_lack_of_access_to_medicines Starvation,Horn of Africa,,North Africa,13/11/2016,17.82771793,34.00560363
 136583,Presumed drowning,,,Mediterranean,12/12/2016,32.78278968,12.62315315
 136977,Hit by vehicle,Central America & Mexico,,Central America incl. Mexico,20/10/2016,18.93839034,-98.19202826
 137377,Glycemic crisis (Lack of Insuline Treatment),Central America & Mexico,0,U.S./Mexico Border,12/01/2016,27.18464463,-98.15041226
@@ -1689,7 +1689,7 @@
 139777,Hypothermia,Middle East,,Europe,05/01/2017,42.07304085,27.01132567
 140177,,Central America & Mexico,,U.S./Mexico Border,07/01/2016,27.15821687,-98.20287719
 140577,,Sub-Saharan Africa,,Mediterranean,01/01/2017,35.87592514,-5.3609039
-140578,"Hypothermia, Exhaustion",Mixed,,Middle East,03/01/2017,33.35082333,35.77302893
+140578,Hypothermia Exhaustion,Mixed,,Middle East,03/01/2017,33.35082333,35.77302893
 140977,Fell from train,Central America & Mexico,,Central America incl. Mexico,11/01/2017,27.221777,-101.39
 141377,Hypothermia,,,Mediterranean,11/01/2017,32.94220801,12.09401116
 141378,Suffocation,,,Mediterranean,14/01/2017,36.08116833,15.79198768
@@ -1711,14 +1711,14 @@
 143780,Drowning,Central America & Mexico,,U.S./Mexico Border,13/01/2017,26.07035285,-98.21501849
 143781,Presumed drowning,,,U.S./Mexico Border,16/01/2017,27.51341732,-99.59494722
 144177,Drowning,Central America & Mexico,,U.S./Mexico Border,18/01/2017,26.08752282,-98.26576391
-144577,"Starvation, Dehydration, Suffocation",Horn of Africa (P),,North Africa,29/03/2015,29.61468506,13.5324707
+144577,Starvation Dehydration Suffocation,Horn of Africa (P),,North Africa,29/03/2015,29.61468506,13.5324707
 144578,Excessive_physical_abuse,Horn of Africa (P),,Sub-Saharan Africa,02/04/2015,-6.744506836,39.31469727
 144579,Sickness_and_lack_of_access_to_medicines,Horn of Africa (P),,Sub-Saharan Africa,02/04/2015,-25.89959717,32.60931397
 144580,Excessive_physical_abuse Shot_or_Stabbed,Horn of Africa (P),,Sub-Saharan Africa,08/04/2015,-17.83319092,31.0322876
 144581,Other,Horn of Africa (P),,Sub-Saharan Africa,13/04/2015,-15.61639404,29.796875
 144582,Dehydration,Horn of Africa (P),,Horn of Africa,16/04/2015,9.915893555,44.64709473
 144583,Vehicle_Accident,Horn of Africa (P),,Horn of Africa,20/04/2015,17.70111084,38.36987305
-144584,"Starvation, Suffocation",Horn of Africa (P),,Sub-Saharan Africa,15/05/2015,1.695678711,37.93768311
+144584,Starvation Suffocation,Horn of Africa (P),,Sub-Saharan Africa,15/05/2015,1.695678711,37.93768311
 144585,Suffocation,Horn of Africa (P),,Sub-Saharan Africa,19/05/2015,1.860473633,37.77288818
 144586,Sickness_and_lack_of_access_to_medicines Dehydration,Horn of Africa (P),,Horn of Africa,21/05/2015,-0.353820801,42.54528809
 144587,Dehydration Harsh_weather_lack_of_adequate_shelter,Horn of Africa (P),,North Africa,23/05/2015,30.41009522,19.56988525
@@ -1767,7 +1767,7 @@
 144630,Starvation,Horn of Africa (P),,North Africa,07/10/2015,15.10968018,36.49389648
 144631,Other,Horn of Africa (P),,Horn of Africa,08/10/2015,13.10650635,38.65692139
 144632,Starvation,Horn of Africa (P),,North Africa,08/10/2015,23.25189209,22.50012207
-144633,"Starvation, Dehydration",Horn of Africa,,North Africa,09/10/2015,19.36352539,27.5098877
+144633,Starvation Dehydration,Horn of Africa,,North Africa,09/10/2015,19.36352539,27.5098877
 144634,Starvation,Horn of Africa (P),,North Africa,10/10/2015,27.55090332,14.26867676
 144635,Starvation,Horn of Africa (P),,North Africa,13/10/2015,27.15270996,15.50012207
 144636,Sickness_and_lack_of_access_to_medicines Starvation,Horn of Africa (P),,North Africa,13/10/2015,22.76647949,22.58789063
@@ -1802,7 +1802,7 @@
 144665,Sickness_and_lack_of_access_to_medicines Harsh_weather_lack_of_adequate_shelter,Horn of Africa (P),,North Africa,28/10/2015,17.6652832,34.04949951
 144666,Vehicle_Accident,Horn of Africa (P),,North Africa,29/10/2015,15.46472168,36.44848633
 144667,Shot_or_Stabbed,Horn of Africa (P),,North Africa,31/10/2015,30.97070313,34.06872559
-144668,"Starvation, Dehydration",Horn of Africa,,Horn of Africa,07/11/2015,8.522888184,47.3717041
+144668,Starvation Dehydration,Horn of Africa,,Horn of Africa,07/11/2015,8.522888184,47.3717041
 144669,Starvation Dehydration Harsh_weather_lack_of_adequate_shelter Suffocation,Horn of Africa (P),,North Africa,12/11/2015,23.96887207,32.12408447
 144670,Vehicle_Accident,Horn of Africa (P),,North Africa,12/11/2015,23.88848877,32.39868164
 144671,Starvation Dehydration Harsh_weather_lack_of_adequate_shelter Suffocation,Horn of Africa (P),,North Africa,12/11/2015,19.23907471,29.31152344
@@ -1824,11 +1824,11 @@
 144687,Starvation Dehydration Suffocation Excessive_physical_abuse Sexual_abuse Shot_or_Stabbed,Horn of Africa (P),,North Africa,19/11/2015,29.96490479,32.87109375
 144688,Vehicle_Accident,Horn of Africa (P),,North Africa,19/11/2015,24.08911133,32.90307617
 144689,Vehicle_Accident,Horn of Africa (P),,North Africa,24/11/2015,20.44067383,30.16448975
-144690,"Starvation, Suffocation",Horn of Africa,,North Africa,25/11/2015,19.590271,37.19030762
+144690,Starvation Suffocation,Horn of Africa,,North Africa,25/11/2015,19.590271,37.19030762
 144691,Other,Horn of Africa (P),,North Africa,07/12/2015,30.7611084,32.9151001
 144692,Shot_or_Stabbed,Horn of Africa (P),,North Africa,09/12/2015,-14.02502441,35.38708496
 144693,Sickness_and_lack_of_access_to_medicines Harsh_weather_lack_of_adequate_shelter,Horn of Africa (P),,North Africa,09/12/2015,20.84448242,30.16650391
-144694,"Starvation, Dehydration",Horn of Africa,,North Africa,10/12/2015,21.89471436,30.56408691
+144694,Starvation Dehydration,Horn of Africa,,North Africa,10/12/2015,21.89471436,30.56408691
 144695,Starvation Dehydration Excessive_physical_abuse,Horn of Africa (P),,North Africa,10/12/2015,30.74432373,32.66247559
 144696,Sickness_and_lack_of_access_to_medicines Starvation Excessive_physical_abuse,Horn of Africa (P),,Sub-Saharan Africa,14/12/2015,-9.309509277,32.7689209
 144697,Harsh_weather_lack_of_adequate_shelter,Horn of Africa (P),,Horn of Africa,15/12/2015,12.95172119,36.15209961
@@ -1934,7 +1934,7 @@
 150353,Unknown (skeletal remains),Central America & Mexico,,U.S./Mexico Border,17/01/2017,32.0145,-112.06358
 150354,Unknown (skeletal remains),Central America & Mexico,,U.S./Mexico Border,26/01/2017,32.3088,-111.395217
 150355,Drowning,Horn of Africa,,Middle East,02/02/2017,12.55105541,44.47840028
-150356,"Undernourished, dehydration",Horn of Africa,,Mediterranean,07/02/2017,38.67158567,16.09699553
+150356,Undernourished dehydration,Horn of Africa,,Mediterranean,07/02/2017,38.67158567,16.09699553
 150746,Hit by vehicle,Horn of Africa,,Europe,08/10/2016,43.7893327,7.53318198
 150747,Shot,Middle East,,Middle East,28/10/2016,37.18312,42.12336
 150748,Presumed drowning,Central America & Mexico,,U.S./Mexico Border,08/02/2017,27.47692542,-99.48162815
@@ -1981,7 +1981,7 @@
 157146,Drowning,,,Mediterranean,21/02/2017,32.66007156,14.26006464
 157546,Murdered,Caribbean,,Caribbean,31/01/2016,19.54345523,-71.70899167
 157547,Presumed drowning,,9,Mediterranean,10/08/2016,35.91218521,-5.323158136
-157548,"Starvation, sickness",Sub-Saharan Africa,,North Africa,25/02/2017,31.74078946,13.99680879
+157548,Starvation sickness,Sub-Saharan Africa,,North Africa,25/02/2017,31.74078946,13.99680879
 157549,Electrocution on railway,Horn of Africa,,Europe,26/02/2017,45.84876787,9.007684583
 157550,Unknown (remains),Caribbean,,Caribbean,14/02/2017,19.56016818,-71.70798106
 157946,Presumed drowning,North Africa,3,Mediterranean,11/10/2016,35.904219,-5.316549173
@@ -2106,7 +2106,7 @@
 162751,Sickness_and_lack_of_access_to_medicines Harsh_weather_lack_of_adequate_shelter,Horn of Africa,,North Africa,18/12/2016,24.09028849,32.90750549
 162752,Harsh_weather_lack_of_adequate_shelter,Horn of Africa,,North Africa,18/12/2016,14.04493335,35.27155735
 162753,Harsh_weather_lack_of_adequate_shelter,,,North Africa,18/12/2016,21.76596205,31.2826497
-162754,"Tekeze River, near Himora, Ethiopia",Horn of Africa,,North Africa,19/12/2016,14.29567286,36.68393967
+162754,Tekeze River near Himora Ethiopia,Horn of Africa,,North Africa,19/12/2016,14.29567286,36.68393967
 162755,Sickness_and_lack_of_access_to_medicines Harsh_weather_lack_of_adequate_shelter Excessive_physical_abuse,Horn of Africa,,North Africa,19/12/2016,17.70045129,33.98616085
 162756,Starvation Dehydration,Horn of Africa,,North Africa,19/12/2016,24.17872723,23.31395911
 162757,Suffocation Vehicle_Accident,Horn of Africa,,North Africa,19/12/2016,17.73132563,33.97929439
@@ -2260,7 +2260,7 @@
 170758,Hypothermia,,,North Africa,30/07/2016,24.69271303,14.31933383
 170759,Vehicle accident,,,North Africa,30/07/2016,32.12219826,12.20829463
 170760,Murdered,,,North Africa,30/08/2016,25.72644703,13.4843729
-170761,"Sickness, Harsh conditions",,,North Africa,30/08/2016,28.42596703,14.75878696
+170761,Sickness Harsh conditions,,,North Africa,30/08/2016,28.42596703,14.75878696
 170762,Violence,,,North Africa,30/08/2016,25.5679845,13.92382602
 170763,Vehicle accident,,,North Africa,30/08/2016,26.23998903,14.14355258
 170764,Murdered,,,North Africa,30/08/2016,32.8538467,13.19844554
@@ -2281,7 +2281,7 @@
 172351,Dehydration,,,North Africa,29/04/2015,25.5679845,14.40722446
 172352,Murdered,,,North Africa,30/05/2015,14.66446589,3.603938344
 172353,Vehicle accident,,,North Africa,30/05/2015,19.58107133,8.782124449
-172354,"Dehydration, Starvation",,,Mediterranean,17/04/2017,33.04465672,12.44724751
+172354,Dehydration Starvation,,,Mediterranean,17/04/2017,33.04465672,12.44724751
 172746,Murdered,,,North Africa,30/01/2015,24.95138967,14.64860555
 172747,Harsh conditions,,,North Africa,30/03/2015,21.53541751,10.53993695
 172748,Violence,,,North Africa,30/03/2015,27.57234172,13.44042758
@@ -2302,15 +2302,15 @@
 172763,Vehicle accident,South Asia,,North Africa,30/08/2015,27.80581822,12.34179477
 172764,Suffocation,,,North Africa,30/08/2015,24.25274534,21.48241977
 172765,,,,North Africa,29/06/2015,19.07515786,8.024067984
-172766,"Dehydration, Starvation",,,North Africa,29/06/2015,20.08405311,10.74178945
+172766,Dehydration Starvation,,,North Africa,29/06/2015,20.08405311,10.74178945
 172767,Violence,,,North Africa,29/06/2015,20.4934639,9.814839469
 173146,Presumed drowning,Central America & Mexico,,U.S./Mexico Border,01/02/2017,28.69796509,-100.5107391
-173546,"Dehydration, Starvation",,,North Africa,30/07/2015,30.45664649,17.52362028
+173546,Dehydration Starvation,,,North Africa,30/07/2015,30.45664649,17.52362028
 173547,Vehicle accident,,,North Africa,30/07/2015,18.93400394,28.42352128
 173548,,,,North Africa,30/07/2015,23.730816,21.13085727
 173549,Vehicle accident,,,North Africa,30/07/2015,20.60045216,8.474507437
 173550,Starvation,,,North Africa,30/07/2015,26.718712,16.71435347
-173551,"Exposure, Hyperthermia",,,North Africa,30/07/2015,18.68932753,30.96390821
+173551,Exposure Hyperthermia,,,North Africa,30/07/2015,18.68932753,30.96390821
 173552,,,,Sub-Saharan Africa,30/07/2015,19.82908682,10.0546833
 173553,Murdered,,,North Africa,30/07/2015,27.02563204,12.47363071
 173554,Murdered,,,North Africa,30/07/2015,23.89163478,15.15429477
