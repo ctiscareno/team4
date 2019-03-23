@@ -45,3 +45,11 @@
 .hidden {
   display: none;
 }
+
+/* This prevents large images from displaying outside
+   the message container. */
+.message-body img {
+  display: block;
+  margin-top: 25px;
+  max-width: 75%;
+}
