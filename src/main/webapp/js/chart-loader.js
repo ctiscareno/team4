@@ -15,7 +15,7 @@ function fetchMessageData() {
 			msgRow = [];
 			var timestampAsDate = new Date (msgJson[i].timestamp);
 			var totalMessages = i + 1;
-			//TODO add the formatted values to msgRow array by using JS' push method
+			//TODO add the formatted values to msgRow array by using JS' push method done
 			msgRow.push(timestampAsDate);
 			msgRow.push(totalMessages);
 			//console.log(msgRow);

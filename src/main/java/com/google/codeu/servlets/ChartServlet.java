@@ -28,7 +28,6 @@ public class ChartServlet extends HttpServlet{
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		response.setContentType("application/json");
-		// The following line should match however you manipulated getMessages() in Step 1
 		List<Message> msgList = datastore.getMessages(null); 
 		Gson gson = new Gson();
 		String json = gson.toJson(msgList);
