@@ -18,11 +18,11 @@ function fetchMessageData() {
 			//TODO add the formatted values to msgRow array by using JS' push method done
 			msgRow.push(timestampAsDate);
 			msgRow.push(totalMessages);
-			//console.log(msgRow);
+			console.log(msgRow);
 			msgData.addRow(msgRow);
 
 		}
-		//console.log(msgData);
+		console.log(msgData);
 		drawChart(msgData);
 	});
 } );
@@ -34,9 +34,11 @@ function drawChart(table) {
 	// Set chart options
 	var chart_options = {
 			'title':'Number of messages per user',
-			'is3D':true,
-			'width':800,
-			'height':400};
+			//'is3D':true,
+			'width':900,
+			'height':900,
+			 bar: {groupWidth: "95%"},
+			};
 
 	// Instantiate and draw our chart, passing in some options.
 	var chart = new google.visualization.BarChart(document.getElementById('chart'));
