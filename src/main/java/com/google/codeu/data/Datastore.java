@@ -57,6 +57,9 @@ public class Datastore {
      *     message. List is sorted by time descending.
      */
     public List<Message> getMessages(String user) {
+    	if(user == null) {
+        	return getAllMessages(); //if user null then return all Messages
+        }
         List<Message> messages = new ArrayList<>();
 
         Query query =
