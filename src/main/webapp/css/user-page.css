@@ -70,7 +70,6 @@ body {
   color:#000;
   text-decoration:none;
 }
-
  #message-input {
    height: 100px;
    width: 99%;
@@ -114,3 +113,10 @@ body {
  .hidden {
    display: none;
  }
+/* This prevents large images from displaying outside
+   the message container. */
+.message-body img {
+  display: block;
+  margin-top: 25px;
+  max-width: 75%;
+}
