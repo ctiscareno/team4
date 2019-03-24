@@ -16,7 +16,31 @@
 
 /* Prevent the page from becoming too wide. */
 body {
-  max-width: 600px;
+   margin: 0;
+   background: linear-gradient(purple, #ccccff) fixed;
+   font-family: sans-serif;
+   text-align: center;
+ }
+
+ nav {
+   background-color: #c042ff;
+   font-size: 16pt;
+   padding: 2px;
+   text-align: center;
+   width 100%;
+ }
+
+ nav a {
+    color: white;
+    margin-center: 2px;
+    text-align: center;
+  }
+
+#navigation .selected,#navigation a:hover
+{
+  background:#dbcd0f;
+  color:#000;
+  text-decoration:none;
 }
 
 /* Remove bullet points from navigation bar. */
@@ -28,5 +52,19 @@ nav ul {
 /* Keep navigation menu on one line. */
 nav li {
   display: inline-block;
-  margin-right: 10px
+  margin-right: 2px
 }
+
+ .padded {
+   padding: 5px;
+ }
+
+ .rounded {
+   border: thin solid black;
+   border-radius: 5px;
+   overflow: hidden;
+ }
+
+ .hidden {
+   display: none;
+ }
