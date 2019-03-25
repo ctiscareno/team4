@@ -16,6 +16,8 @@
 
 package com.google.codeu.data;
 
+import org.omg.CORBA.PUBLIC_MEMBER;
+
 import java.util.UUID;
 
 /** A single message posted by a user. */
@@ -26,6 +28,7 @@ public class Message {
   private String text;
   private long timestamp;
   private String recipient;
+  private String imageUrl;
 
   /**
    * Constructs a new {@link Message} posted by {@code user} with {@code text} content. Generates a
@@ -35,31 +38,25 @@ public class Message {
     this(UUID.randomUUID(), user, text, System.currentTimeMillis(), recipient);
   }
 
-  public Message(UUID id, String user, String text, long timestamp, String recipient) {
+  public Message(UUID id, String user, String text, long timestamp, String imageUrl) {
     this.id = id;
     this.user = user;
     this.text = text;
     this.timestamp = timestamp;
-    this.recipient = recipient;
+    this.imageUrl = imageUrl;
   }
 
-  public UUID getId() {
-    return id;
-  }
+  public UUID getId() { return id; }
 
-  public String getUser() {
-    return user;
-  }
+  public String getUser() { return user; }
 
-  public String getText() {
-    return text;
-  }
+  public String getText() { return text; }
 
-  public long getTimestamp() {
-    return timestamp;
-  }
+  public long getTimestamp() { return timestamp; }
 
-  public String getRecipient(){
-      return recipient;
-  }
+  public String getRecipient() { return recipient; }
+
+  public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
+
+  public String getImageUrl() { return imageUrl; }
 }

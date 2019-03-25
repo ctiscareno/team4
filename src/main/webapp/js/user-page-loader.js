@@ -40,15 +40,37 @@ function showMessageFormIfViewingSelf() {
       .then((loginStatus) => {
         if (loginStatus.isLoggedIn &&
             loginStatus.username == parameterUsername) {
-          const messageForm = document.getElementById('message-form');
-          messageForm.action = '/messages?recipient=' + parameterUsername;
-          
-          messageForm.classList.remove('hidden');
+          fetchImageUploadUrlAndShowForm();
         }
       });
-   document.getElementById('about-me-form').classList.remove('hidden');
 }
 
+function fetchImageUploadUrlAndShowForm() {
+  fetch('/image-upload-url')
+      .then((response) => {
+        return response.text();
+      })
+      .then((imageUploadUrl) => {
+        const messageForm = document.getElementById('message-form');
+        messageForm.action = imageUploadUrl;
+        messageForm.classList.remove('hidden');
+      });
+}
+ /*
+function showMessageFormIfLoggedIn() {
+	  fetch('/login-status')
+	      .then((response) => {
+	        return response.json();
+	      })
+	      .then((loginStatus) => {
+	        if (loginStatus.isLoggedIn) {
+	          const messageForm = document.getElementById('message-form');
+	          messageForm.action = '/messages?recipient=' + parameterUsername;
+	          messageForm.classList.remove('hidden');
+	        }
+	      });
+	}
+*/
 /** Fetches messages and add them to the page. */
 function fetchMessages() {
   const url = '/messages?user=' + parameterUsername;
@@ -90,6 +112,11 @@ function buildMessageDiv(message) {
   messageDiv.appendChild(headerDiv);
   messageDiv.appendChild(bodyDiv);
 
+  if(message.imageUrl){
+    bodyDiv.innerHTML += '<br/>';
+    bodyDiv.innerHTML += '<img src="' + message.imageUrl + '" />';
+  }
+
   return messageDiv;
 }
 
@@ -101,18 +128,17 @@ function buildUI() {
   fetchAboutMe();
 }
 
-function fetchAboutMe() {
-    const url = '/about?user=' + parameterUsername;
-    fetch(url).then((response)) => {
-        return response.text();
-    }).then((aboutMe) => {
-        const aboutMeContainer = document.getElementById('about-me-container');
-        if (aboutMe == '') {
-            aboutMe = 'This user has not entered any information yet.';
-        }
+function fetchAboutMe(){
+  const url = '/about?user=' + parameterUsername;
+  fetch(url).then((response) => {
+    return response.text();
+  }).then((aboutMe) => {
+    const aboutMeContainer = document.getElementById('about-me-container');
+    if(aboutMe == ''){
+      aboutMe = 'This user has not entered any information yet.';
+    }
 
-        aboutMeContainer.innerHTML = aboutMe;
-        });
-}
+    aboutMeContainer.innerHTML = aboutMe;
 
+  });
 }
