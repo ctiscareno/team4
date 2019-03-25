@@ -26,18 +26,18 @@ public class MapsServlet extends HttpServlet {
    String line = scanner.nextLine();
    String[] cells = line.split(",");
 
-   for (String cell : cells) {
-    System.out.println(cell);
-   }
+   // for (String cell : cells) {
+   //  System.out.println(cell);
+   // }
 
     int id = Integer.parseInt(cells[0]);
-    String causeOfDeath = cells[1];
-    String origin = cells[2];
+    String causeOfDeath = cells[1].equals("") ? " " : cells[1];
+    String origin = cells[2].equals("") ? " " : cells[2];
     int numDead = cells[3].equals("") ? 0 : Integer.parseInt(cells[3]);
-    String incidentRegion = cells[4];
-    String date = cells[5];
-    double lat = Double.parseDouble(cells[6]);
-    double lng = Double.parseDouble(cells[7]);
+    String incidentRegion = cells[4].equals("") ? " " : cells[4];
+    String date = cells[5].equals("") ? " " : cells[5];
+    double lat = cells[6].equals("") ? 0 : Double.parseDouble(cells[6]);
+    double lng = cells[7].equals("") ? 0 : Double.parseDouble(cells[7]);
 
    migrantArray.add(gson.toJsonTree(new MissingMigrant(id, causeOfDeath, origin, numDead, incidentRegion, date, lat, lng)));
   }
