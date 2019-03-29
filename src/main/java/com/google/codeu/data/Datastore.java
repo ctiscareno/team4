@@ -28,10 +28,20 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 import com.google.appengine.api.datastore.FetchOptions;
+
+/*import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets; 
+import java.nio.file.Files; 
+import java.nio.file.Path; 
+import java.nio.file.Paths; */
+
+
 /** Provides access to the data stored in Datastore. */
 public class Datastore {
 
     private DatastoreService datastore;
+    //private List<Migrant> migs = readBooksFromCSV("dataset.txt");
 
     public Datastore() {
         datastore = DatastoreServiceFactory.getDatastoreService();
@@ -149,4 +159,89 @@ public class Datastore {
         System.out.print(results.countEntities(FetchOptions.Builder.withLimit(1000)));
         return results.countEntities(FetchOptions.Builder.withLimit(1000));
     }
+    
+    /** Stores the Migrant in Datastore. */
+    public void storeMigrant(Migrant mig) {
+        Entity migEntity = new Entity("Migrant", mig.getId());
+        migEntity.setProperty("id", mig.getId());
+        migEntity.setProperty("cause_of_death", mig.getCause_of_death());
+        migEntity.setProperty("region_origin", mig.getRegion_origin());
+        migEntity.setProperty("affected_nationality", mig.getAffected_nationality());
+        migEntity.setProperty("missing", mig.getMissing());
+        migEntity.setProperty("dead", mig.getDead());
+        migEntity.setProperty("incident_region", mig.getIncident_region());
+        migEntity.setProperty("date", mig.getDate());
+        migEntity.setProperty("latitude", mig.getLatitude());
+        migEntity.setProperty("longitude", mig.getLongitude());
+        datastore.put(migEntity);
+    }
+
+    /**
+     * Returns the Migrant owned by the email id, or null if no matching Migrant was found.
+     */
+    public Migrant getMigrant(int id) {
+
+        Query query = new Query("Migrant").setFilter(new Query.FilterPredicate("id", FilterOperator.EQUAL, id));
+        PreparedQuery results = datastore.prepare(query);
+        Entity migEntity = results.asSingleEntity();
+        if(migEntity == null) {
+            return null;
+        }
+        
+        String cause_of_death = (String) migEntity.getProperty("cause_of_death");
+        String region_origin = (String) migEntity.getProperty("region_origin");;
+        int affected_nationality = (Integer) migEntity.getProperty("affected_nationality");
+        int missing = (Integer) migEntity.getProperty("missing");
+        int dead = (Integer) migEntity.getProperty("dead");
+        String incident_region = (String) migEntity.getProperty("incident_region");;
+        String date = (String) migEntity.getProperty("date");;
+        double latitude = (Double) migEntity.getProperty("latitude");
+        double longitude = (Double) migEntity.getProperty("longitude");
+        
+        Migrant migrant = new Migrant(id, cause_of_death, region_origin, affected_nationality, missing, dead,
+    			 incident_region, date, latitude, longitude);
+
+        return migrant;
+    }
+    
+    /** * Simple Java program to read CSV file in Java. In this program we will read 
+     * * list of books stored in CSV file as comma separated values. * 
+     * * @author WINDOWS 8 * */
+    /*public class CSVReaderInJava {
+    	public static void main(String... args) {
+    		List<Book> books = readBooksFromCSV("books.txt");
+    		//let's print all the person read from CSV file 
+    		for (Book b : books) {
+    			System.out.println(b); }
+    		} 
+    	private static List<Book> readBooksFromCSV(String fileName) {
+    		List<Book> books = new ArrayList<>(); Path pathToFile = Paths.get(fileName); 
+    		// create an instance of BufferedReader 
+    		// using try with resource, Java 7 feature to close resources 
+    		try (BufferedReader br = Files.newBufferedReader(pathToFile, StandardCharsets.US_ASCII)) { 
+    			// read the first line from the text file String line = br.readLine(); 
+    			// loop until all lines are read while (line != null) { 
+    			// use string.split to load a string array with the values from 
+    			// each line of 
+    			// the file, using a comma as the delimiter 
+    			String[] attributes = line.split(",");
+    			Book book = createBook(attributes); 
+    			// adding book into ArrayList books.add(book); 
+    			// read next line before looping 
+    			// if end of file reached, line would be null line = br.readLine(); } }
+    			catch (IOException ioe) {
+    				ioe.printStackTrace(); 
+    				}
+    			return books; 
+    			} 
+    		private static Book createBook(String[] metadata) {
+    			String name = metadata[0]; int price = Integer.parseInt(metadata[1]);
+    			String author = metadata[2]; 
+    			// create and return book of this metadata 
+    			return new Book(name, price, author); } 
+    		}
+    		}
+    	}
+    } */
+
 }
