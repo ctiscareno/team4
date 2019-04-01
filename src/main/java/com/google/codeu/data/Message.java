@@ -47,6 +47,8 @@ public class Message {
   }
 
   public UUID getId() { return id; }
+  
+  public void setText(String newText) { text = newText; }
 
   public String getUser() { return user; }
 

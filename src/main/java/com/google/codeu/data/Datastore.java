@@ -28,11 +28,20 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 import com.google.appengine.api.datastore.FetchOptions;
+
+/*import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets; 
+import java.nio.file.Files; 
+import java.nio.file.Path; 
+import java.nio.file.Paths; */
+
+
 /** Provides access to the data stored in Datastore. */
 public class Datastore {
 
     private DatastoreService datastore;
-
+  
     public Datastore() {
         datastore = DatastoreServiceFactory.getDatastoreService();
     }
@@ -145,5 +154,81 @@ public class Datastore {
         PreparedQuery results = datastore.prepare(query);
         System.out.print(results.countEntities(FetchOptions.Builder.withLimit(1000)));
         return results.countEntities(FetchOptions.Builder.withLimit(1000));
+    }
+
+    /** Stores the Migrant in Datastore. */
+    public void storeMigrant(Migrant mig) {
+        Entity migEntity = new Entity("Migrant", mig.getId());
+        migEntity.setProperty("id", mig.getId());
+        migEntity.setProperty("cause_of_death", mig.getCause_of_death());
+        migEntity.setProperty("region_origin", mig.getRegion_origin());
+        migEntity.setProperty("affected_nationality", mig.getAffected_nationality());
+        migEntity.setProperty("missing", mig.getMissing());
+        migEntity.setProperty("dead", mig.getDead());
+        migEntity.setProperty("incident_region", mig.getIncident_region());
+        migEntity.setProperty("date", mig.getDate());
+        migEntity.setProperty("latitude", mig.getLatitude());
+        migEntity.setProperty("longitude", mig.getLongitude());
+        datastore.put(migEntity);
+    }
+
+    /**
+     * Returns the Migrant owned by the email id, or null if no matching Migrant was found.
+     */
+    public Migrant getMigrant(int id) {
+
+        Query query = new Query("Migrant").setFilter(new Query.FilterPredicate("id", FilterOperator.EQUAL, id));
+        PreparedQuery results = datastore.prepare(query);
+        Entity migEntity = results.asSingleEntity();
+        if(migEntity == null) {
+            return null;
+        }
+        
+        String cause_of_death = (String) migEntity.getProperty("cause_of_death");
+        String region_origin = (String) migEntity.getProperty("region_origin");;
+        int affected_nationality = (Integer) migEntity.getProperty("affected_nationality");
+        int missing = (Integer) migEntity.getProperty("missing");
+        int dead = (Integer) migEntity.getProperty("dead");
+        String incident_region = (String) migEntity.getProperty("incident_region");;
+        String date = (String) migEntity.getProperty("date");;
+        double latitude = (Double) migEntity.getProperty("latitude");
+        double longitude = (Double) migEntity.getProperty("longitude");
+        
+        Migrant migrant = new Migrant(id, cause_of_death, region_origin, affected_nationality, missing, dead,
+    			 incident_region, date, latitude, longitude);
+
+        return migrant;
+    }
+    
+    /* Used to store the map markers information the user adds */
+    public List<UserMarker> getMarkers() {
+      List<UserMarker> markers = new ArrayList<>();
+
+      Query query = new Query("UserMarker");
+      PreparedQuery results = datastore.prepare(query);
+
+      for (Entity entity : results.asIterable()) {
+       try {
+        double lat = (double) entity.getProperty("lat");
+        double lng = (double) entity.getProperty("lng");    
+        String content = (String) entity.getProperty("content");
+
+        UserMarker marker = new UserMarker(lat, lng, content);
+        markers.add(marker);
+       } catch (Exception e) {
+        System.err.println("Error reading marker.");
+        System.err.println(entity.toString());
+        e.printStackTrace();
+       }
+      }
+      return markers;
+    }
+
+    public void storeMarker(UserMarker marker) {
+      Entity markerEntity = new Entity("UserMarker");
+      markerEntity.setProperty("lat", marker.getLat());
+      markerEntity.setProperty("lng", marker.getLng());
+      markerEntity.setProperty("content", marker.getContent());
+      datastore.put(markerEntity);
     }
 }

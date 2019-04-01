@@ -13,39 +13,106 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+body {
+   margin: 0;
+   background: linear-gradient(purple, #ccccff) fixed;
+   font-family: sans-serif;
+   text-align: center;
+ }
 
-/* Set the size of the message input to be 100 pixels high
-   and will fill the width of its parent element. */
-#message-input {
-  height: 100px;
-  width: 100%;
+ p {
+    margin-center: auto;
+    text-align: center;
+ }
+
+ nav {
+   background-color: #c042ff;
+   font-size: 16pt;
+   padding: 2px;
+   text-align: center;
+   width 100%;
+   justify-content: space-between;
+ }
+
+ nav a {
+   color: white;
+   margin-center: 5px;
+   text-align: center;
+ }
+
+ nav a.on
+ {
+     background:yellow;
+     padding:2px 6px;
+ }
+
+ h2 {
+   margin: 0;
+   text-align: center;
+ }
+
+ input[type=submit] {
+   background-color: #ccccff;
+   height: 50px;
+   width: 100px;
+   font-size: 14pt;
+ }
+
+ #content {
+   margin-center: auto;
+   text-align: center;
+   /*margin-right: auto;*/
+ }
+
+#navigation .selected,#navigation a:hover
+{
+  background:#dbcd0f;
+  color:#000;
+  text-decoration:none;
 }
+ #message-input {
+   height: 100px;
+   width: 99%;
+ }
 
-/* Give each message a rounded border. */
-.message-div {
-  border: thin solid black;
-  border-radius: 5px;
-  margin-top: 20px;
-}
+ .message-header {
+   border-bottom: thin solid black;
+   background-image: linear-gradient(to right, white , #ccccff);
+ }
 
-/* Add a bottom border to the message header. */
-.message-header {
-  border-bottom: thin solid black;
-  padding: 5px;
-}
+ .message-body {
+   font: 12pt cursive;
+ }
 
-/* Give the message body a margin so the text
-   isn't too close to the border. */
-.message-body {
-  margin: 5px;
-}
+ .panel {
+   background-color: white;
+   margin-top: 20px;
+ }
 
-/* Use this to hide certain elements like forms if the
-   user is not logged in or viewing their own page. */
-.hidden {
-  display: none;
-}
+ .centered{
+   text-align: center;
+ }
 
+ .center {
+   margin: auto;
+   width: 50%;
+   border: 3px solid #dbcd0f;
+   padding: 10px;
+ }
+
+ .padded {
+   padding: 5px;
+ }
+
+ .rounded {
+   border: thin solid black;
+   border-radius: 5px;
+   overflow: hidden;
+ }
+
+ .hidden {
+   display: none;
+ }
 /* This prevents large images from displaying outside
    the message container. */
 .message-body img {
