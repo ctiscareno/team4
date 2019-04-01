@@ -95,9 +95,11 @@
     }
     
     function buildInfoWindowInput(lat, lng){
-      const textBox = document.createElement('textarea');
+      const text = document.createElement('h4');
+      text.appendChild(document.createTextNode('name'));
+      const textBox = document.createElement('textArea');
       const button = document.createElement('button');
-      button.appendChild(document.createTextNode('Submit'));
+      button.appendChild(document.createTextNode('Register'));
 
       button.onclick = () => {
         createMarkerForDisplay(lat, lng, textBox.value);
@@ -105,6 +107,7 @@
       };
  
       const containerDiv = document.createElement('div');
+      containerDiv.appendChild(text);
       containerDiv.appendChild(textBox);
       containerDiv.appendChild(document.createElement('br'));
       containerDiv.appendChild(button);

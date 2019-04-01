@@ -162,8 +162,8 @@ public class Datastore {
         double lng = (double) entity.getProperty("lng");    
         String content = (String) entity.getProperty("content");
 
-        UserMarker marker = new UserMarker(lat, lng, content);
-        markers.add(marker);
+        // UserMarker marker = new UserMarker(lat, lng, content);
+        // markers.add(marker);
        } catch (Exception e) {
         System.err.println("Error reading marker.");
         System.err.println(entity.toString());
@@ -180,7 +180,5 @@ public class Datastore {
       markerEntity.setProperty("content", marker.getContent());
       datastore.put(markerEntity);
     }
-
-
 
 }

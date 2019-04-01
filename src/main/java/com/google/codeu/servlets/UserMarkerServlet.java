@@ -18,10 +18,9 @@ import com.google.gson.Gson;
 /**
  * Handles fetching and saving {@link UserMarker} instances.
  */
-@WebServlet("/user-markers")
+@WebServlet("/user-marke")
 public class UserMarkerServlet extends HttpServlet {
 
- private Datastore datastore;
 
  @Override
  public void init() {
@@ -46,7 +45,7 @@ public class UserMarkerServlet extends HttpServlet {
   double lng = Double.parseDouble(request.getParameter("lng"));
   String content = Jsoup.clean(request.getParameter("content"), Whitelist.none());
 
-  UserMarker marker = new UserMarker(lat, lng, content);
-  datastore.storeMarker(marker);
+  // UserMarker marker = new UserMarker(lat, lng, content );
+  // datastore.storeMarker(marker);
  }
 }

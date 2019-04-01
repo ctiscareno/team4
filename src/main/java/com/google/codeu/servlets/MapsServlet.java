@@ -6,19 +6,27 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.jsoup.Jsoup;
+import org.jsoup.safety.Whitelist;
+
+import com.google.codeu.data.Datastore;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 
 /**
  * Returns Migration data as a JSON array, e.g. [{"lat": 38.4404675, "lng": -122.7144313}]
  */
-@WebServlet("/maps-part2")
+@WebServlet("/user-markers")
 public class MapsServlet extends HttpServlet {
 
   JsonArray migrantArray;
+  private Datastore datastore;
+
 
  @Override
  public void init() throws NullPointerException {
+  datastore = new Datastore();
   migrantArray = new JsonArray();
   Gson gson = new Gson();
   Scanner scanner = new Scanner(getServletContext().getResourceAsStream("/WEB-INF/dataset.csv"));
@@ -26,9 +34,6 @@ public class MapsServlet extends HttpServlet {
    String line = scanner.nextLine();
    String[] cells = line.split(",");
 
-   // for (String cell : cells) {
-   //  System.out.println(cell);
-   // }
 
     int id = Integer.parseInt(cells[0]);
     String causeOfDeath = cells[1].equals("") ? " " : cells[1];
@@ -42,13 +47,30 @@ public class MapsServlet extends HttpServlet {
    migrantArray.add(gson.toJsonTree(new MissingMigrant(id, causeOfDeath, origin, numDead, incidentRegion, date, lat, lng)));
   }
   scanner.close();
- }
+  }
+ 
 
- @Override
- public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+  @Override
+  public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
   response.setContentType("application/json");
+
+  List<UserMarker> markers = datastore.getMarkers();
+  Gson gson = new Gson();
+  String json = gson.toJson(markers);
   response.getOutputStream().println(migrantArray.toString());
- }
+  }
+
+
+  @Override
+  public void doPost(HttpServletRequest request, HttpServletResponse response) {
+
+  double lat = Double.parseDouble(request.getParameter("lat"));
+  double lng = Double.parseDouble(request.getParameter("lng"));
+  String content = Jsoup.clean(request.getParameter("content"), Whitelist.none());
+
+  //UserMarker marker = new UserMarker(lat, lng, content, );
+  //datastore.storeMarker(marker);
+  }
 
  private static class MissingMigrant{
   int id;
@@ -86,3 +108,6 @@ public class MapsServlet extends HttpServlet {
   }
  }
 }
+
+
+
