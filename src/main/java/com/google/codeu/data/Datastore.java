@@ -162,9 +162,7 @@ public class Datastore {
         migEntity.setProperty("id", mig.getId());
         migEntity.setProperty("cause_of_death", mig.getCause_of_death());
         migEntity.setProperty("region_origin", mig.getRegion_origin());
-        migEntity.setProperty("affected_nationality", mig.getAffected_nationality());
-        migEntity.setProperty("missing", mig.getMissing());
-        migEntity.setProperty("dead", mig.getDead());
+        migEntity.setProperty("numDead", mig.getDead());
         migEntity.setProperty("incident_region", mig.getIncident_region());
         migEntity.setProperty("date", mig.getDate());
         migEntity.setProperty("latitude", mig.getLatitude());
@@ -186,15 +184,13 @@ public class Datastore {
         
         String cause_of_death = (String) migEntity.getProperty("cause_of_death");
         String region_origin = (String) migEntity.getProperty("region_origin");;
-        int affected_nationality = (Integer) migEntity.getProperty("affected_nationality");
-        int missing = (Integer) migEntity.getProperty("missing");
-        int dead = (Integer) migEntity.getProperty("dead");
+        int numDead = (Integer) migEntity.getProperty("numDead");
         String incident_region = (String) migEntity.getProperty("incident_region");;
         String date = (String) migEntity.getProperty("date");;
         double latitude = (Double) migEntity.getProperty("latitude");
         double longitude = (Double) migEntity.getProperty("longitude");
         
-        Migrant migrant = new Migrant(id, cause_of_death, region_origin, affected_nationality, missing, dead,
+        Migrant migrant = new Migrant(id, cause_of_death, region_origin, numDead,
     			 incident_region, date, latitude, longitude);
 
         return migrant;
