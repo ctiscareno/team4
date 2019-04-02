@@ -41,8 +41,7 @@ import java.nio.file.Paths; */
 public class Datastore {
 
     private DatastoreService datastore;
-    //private List<Migrant> migs = readBooksFromCSV("dataset.txt");
-
+  
     public Datastore() {
         datastore = DatastoreServiceFactory.getDatastoreService();
     }
@@ -55,7 +54,9 @@ public class Datastore {
         messageEntity.setProperty("text", message.getText());
         messageEntity.setProperty("timestamp", message.getTimestamp());
         messageEntity.setProperty("recipient", message.getRecipient());
-
+        if(message.getImageUrl() != null) {
+            messageEntity.setProperty("imageUrl", message.getImageUrl());
+        }
 
         datastore.put(messageEntity);
     }
@@ -67,9 +68,6 @@ public class Datastore {
      *     message. List is sorted by time descending.
      */
     public List<Message> getMessages(String user) {
-    	if(user == null) {
-        	return getAllMessages(); //if user null then return all Messages
-        }
         List<Message> messages = new ArrayList<>();
 
         Query query =
@@ -86,9 +84,8 @@ public class Datastore {
                 //String user = (String) entity.getProperty("user");
                 String text = (String) entity.getProperty("text");
                 long timestamp = (long) entity.getProperty("timestamp");
-                String recipient = (String) entity.getProperty("recipient");
-
-                Message message = new Message(id, user, text, timestamp, recipient);
+                String imageUrl = (String) entity.getProperty("imageUrl");
+                Message message = new Message(id, user, text, timestamp, imageUrl);
                 messages.add(message);
             } catch (Exception e) {
                 System.err.println("Error reading message.");
@@ -113,9 +110,8 @@ public class Datastore {
                 String user = (String) entity.getProperty("user");
                 String text = (String) entity.getProperty("text");
                 long timestamp = (long) entity.getProperty("timestamp");
-                String recipient = (String) entity.getProperty("recipient");
-
-                Message message = new Message(id, user, text, timestamp, recipient);
+                String imageUrl = (String) entity.getProperty("imageUrl");
+                Message message = new Message(id, user, text, timestamp, imageUrl);
                 messages.add(message);
             } catch (Exception e) {
                 System.err.println("Error reading message.");
@@ -204,7 +200,6 @@ public class Datastore {
         return migrant;
     }
     
-  
     /* Used to store the map markers information the user adds */
     public List<UserMarker> getMarkers() {
       List<UserMarker> markers = new ArrayList<>();
@@ -236,5 +231,4 @@ public class Datastore {
       markerEntity.setProperty("content", marker.getContent());
       datastore.put(markerEntity);
     }
-
 }
