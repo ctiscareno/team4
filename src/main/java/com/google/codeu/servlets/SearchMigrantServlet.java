@@ -13,10 +13,11 @@ import com.google.gson.Gson;
 /**
  * Handles fetching site statistics.
  */
-@WebServlet("/messageChart")
-public class ChartServlet extends HttpServlet{
+@WebServlet("/searchMigrant")
+public class SearchMigrantServlet extends HttpServlet{
 
 	private Datastore datastore;
+	//List<Migrant> migList;
 
 	@Override
 	public void init() {
@@ -29,9 +30,13 @@ public class ChartServlet extends HttpServlet{
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		response.setContentType("application/json");
-		List<Migrant> migList = datastore.getAllMigrants(); 
+		String idString = request.getParameter("id");
+		int id = Integer.parseInt(idString);
+		Migrant mig = datastore.getMigrant(id);
+		//migList.add(mig);
 		Gson gson = new Gson();
-		String json = gson.toJson(migList);
+		String json = gson.toJson(mig);
 		response.getWriter().println(json);
 	}
+
 }
