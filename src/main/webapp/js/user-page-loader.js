@@ -40,9 +40,20 @@ function showMessageFormIfViewingSelf() {
       .then((loginStatus) => {
         if (loginStatus.isLoggedIn &&
             loginStatus.username == parameterUsername) {
-          const messageForm = document.getElementById('message-form');
-          messageForm.classList.remove('hidden');
+          fetchImageUploadUrlAndShowForm();
         }
+      });
+}
+
+function fetchImageUploadUrlAndShowForm() {
+  fetch('/image-upload-url')
+      .then((response) => {
+        return response.text();
+      })
+      .then((imageUploadUrl) => {
+        const messageForm = document.getElementById('message-form');
+        messageForm.action = imageUploadUrl;
+        messageForm.classList.remove('hidden');
       });
 }
  /*
@@ -101,6 +112,11 @@ function buildMessageDiv(message) {
   messageDiv.appendChild(headerDiv);
   messageDiv.appendChild(bodyDiv);
 
+  if(message.imageUrl){
+    bodyDiv.innerHTML += '<br/>';
+    bodyDiv.innerHTML += '<img src="' + message.imageUrl + '" />';
+  }
+
   return messageDiv;
 }
 
@@ -113,7 +129,6 @@ function buildUI() {
 }
 
 function fetchAboutMe(){
-  //const url = '/about?user=' + parameterUsername;
   const parameterLanguage = urlParams.get('language');
   let url = '/messages?user=' + parameterUsername;
   if(parameterLanguage) {

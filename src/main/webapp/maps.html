@@ -5,7 +5,6 @@
 <head>
   <title>Missing Migrants</title>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDePI5QqK47mWycz2hNBpIJOZcla9hCriY"></script>
-  
   <script>
     let map;
     let editMarker;
@@ -119,11 +118,28 @@
     #map{
       width: 500px;
       height: 500px;
+      border: 3px solid #f1f1f1;
+      position: absolute;
+      top: 25%;
+      left: 30%;
     }
   </style>
 </head>
+<link rel="stylesheet" href="/css/maps.css">
+<script src="/js/navigation-loader.js"></script>
+
 <body onload="createMissingPersonsMap();">
- <h1>Missing Migrants</h1>
+<nav id="navigation">
+<a href="/">Home</a>
+<a href="/about.html">About our Team</a>
+<a href="/reports.html">Reports</a>
+<a href="/feed.html">Global Feed</a>
+<a href="/search.html">Search</a>
+</nav>
+<div class="bg-image"></div>
+<div class="bg-text">
+    <h1 style="font-size:25px">Map of Known Missing Migrants</h1>
+</div>
  <div id="map"></div>
 </body>
 </html>
