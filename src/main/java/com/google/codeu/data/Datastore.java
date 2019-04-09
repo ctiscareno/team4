@@ -39,7 +39,6 @@ import java.nio.file.Paths; */
 
 /** Provides access to the data stored in Datastore. */
 public class Datastore {
-
 	private DatastoreService datastore;
 
 	public Datastore() {
@@ -68,6 +67,9 @@ public class Datastore {
 	 *     message. List is sorted by time descending.
 	 */
 	public List<Message> getMessages(String user) {
+		if(user == null){
+			return getAllMessages();
+		}
 		List<Message> messages = new ArrayList<>();
 
 		Query query =

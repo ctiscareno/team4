@@ -7,6 +7,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.jsoup.Jsoup;
+import org.jsoup.safety.Whitelist;
+
 import com.google.codeu.data.Datastore;
 import com.google.codeu.data.Migrant;
 import com.google.gson.Gson;
@@ -15,7 +18,7 @@ import com.google.gson.JsonArray;
 /**
  * Returns Migration data as a JSON array, e.g. [{"lat": 38.4404675, "lng": -122.7144313}]
  */
-@WebServlet("/maps-part2")
+@WebServlet("/user-markers")
 public class MapsServlet extends HttpServlet {
 
 	JsonArray migrantArray;
