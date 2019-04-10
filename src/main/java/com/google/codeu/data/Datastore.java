@@ -240,8 +240,13 @@ public class Datastore {
 				double lat = (double) entity.getProperty("lat");
 				double lng = (double) entity.getProperty("lng");    
 				String content = (String) entity.getProperty("content");
+				String cause_of_death = (String) entity.getProperty("cause_of_death");
+				String origin = (String) entity.getProperty("origin");;
+				int numDead = (Integer) entity.getProperty("numDead");
+				String incident_region = (String) entity.getProperty("incident_region");;
+				String date = (String) entity.getProperty("date");
 
-				UserMarker marker = new UserMarker(lat, lng, content);
+				UserMarker marker = new UserMarker(lat, lng, content, cause_of_death, origin, numDead, incident_region, date);
 				markers.add(marker);
 			} catch (Exception e) {
 				System.err.println("Error reading marker.");

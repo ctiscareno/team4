@@ -18,34 +18,35 @@ import com.google.gson.Gson;
 /**
  * Handles fetching and saving {@link UserMarker} instances.
  */
-@WebServlet("/user-marke")
+@WebServlet("/user-markers")
 public class UserMarkerServlet extends HttpServlet {
+	private Datastore datastore;
 
 
- @Override
- public void init() {
-  datastore = new Datastore();
- }
+	@Override
+	public void init() {
+		datastore = new Datastore();
+	}
 
- @Override
- public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-  response.setContentType("application/json");
+	@Override
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		response.setContentType("application/json");
 
-  List<UserMarker> markers = datastore.getMarkers();
-  Gson gson = new Gson();
-  String json = gson.toJson(markers);
+		List<UserMarker> markers = datastore.getMarkers();
+		Gson gson = new Gson();
+		String json = gson.toJson(markers);
 
-  response.getOutputStream().println(json);
- }
+		response.getOutputStream().println(json);
+	}
 
- @Override
- public void doPost(HttpServletRequest request, HttpServletResponse response) {
+	@Override
+	public void doPost(HttpServletRequest request, HttpServletResponse response) {
 
-  double lat = Double.parseDouble(request.getParameter("lat"));
-  double lng = Double.parseDouble(request.getParameter("lng"));
-  String content = Jsoup.clean(request.getParameter("content"), Whitelist.none());
+		double lat = Double.parseDouble(request.getParameter("lat"));
+		double lng = Double.parseDouble(request.getParameter("lng"));
+		String content = Jsoup.clean(request.getParameter("content"), Whitelist.none());
 
-  // UserMarker marker = new UserMarker(lat, lng, content );
-  // datastore.storeMarker(marker);
- }
+		// UserMarker marker = new UserMarker(lat, lng, content );
+		// datastore.storeMarker(marker);
+	}
 }
