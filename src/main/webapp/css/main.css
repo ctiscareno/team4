@@ -31,8 +31,10 @@ body {
 
  nav a {
     color: white;
-    margin-center: 2px;
+    margin-center: 30px;
     text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
 #navigation .selected,#navigation a:hover
@@ -40,6 +42,8 @@ body {
   background:#ff5733;
   color:#000;
   text-decoration:none;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /* Remove bullet points from navigation bar. */
