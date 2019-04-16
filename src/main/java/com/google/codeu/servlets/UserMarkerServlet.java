@@ -45,8 +45,14 @@ public class UserMarkerServlet extends HttpServlet {
 		double lat = Double.parseDouble(request.getParameter("lat"));
 		double lng = Double.parseDouble(request.getParameter("lng"));
 		String content = Jsoup.clean(request.getParameter("content"), Whitelist.none());
+		String causeOfDeath = Jsoup.clean(request.getParameter("causeOfDeath"), Whitelist.none());
+		String origin = Jsoup.clean(request.getParameter("origin"), Whitelist.none());
+		int numDead = Integer.parseInt(request.getParameter("numDead"));
+		String incidentRegion = Jsoup.clean(request.getParameter("incidentRegion"), Whitelist.none());
+		String date = Jsoup.clean(request.getParameter("date"), Whitelist.none());
 
-		// UserMarker marker = new UserMarker(lat, lng, content );
-		// datastore.storeMarker(marker);
+
+		UserMarker marker = new UserMarker(lat, lng, content, causeOfDeath, origin, numDead, incidentRegion, date );
+		datastore.storeMarker(marker);
 	}
 }
