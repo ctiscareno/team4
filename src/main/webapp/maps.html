@@ -25,7 +25,7 @@
 
         missingPersons.forEach((missingPerson) => {
           new google.maps.Marker({
-            position: {lat: missingPerson.lat, lng: missingPerson.lng},
+            position: {lat: missingPerson.latitude, lng: missingPerson.longitude},
             map: map
           });  
         });
