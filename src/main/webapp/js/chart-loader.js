@@ -1,29 +1,58 @@
-google.charts.load('current', {'packages':['corechart']});
+google.charts.load('current', {'packages':['table']});
 google.charts.setOnLoadCallback(
 function fetchMessageData() {
-	fetch("/messageChart")
+	fetch("/allChart")
 	.then((response) => {
 		return response.json();
 	})
 	.then((msgJson) => {
-		var msgData = new google.visualization.DataTable();
+		var data = new google.visualization.DataTable();
 		//defining columns for the DataTable instances
-		msgData.addColumn('date','Data');
-		msgData.addColumn('number','Message Count');
+		data.addColumn('Number','ID');
+		data.addColumn('String','Cause of Death');
+		data.addColumn('String','Region of Origin');
+		data.addColumn('Number','#Dead');
+		data.addColumn('String','Region of Incident');
+		data.addColumn('Date','Date');
+		data.addColumn('Number','Latitude');
+		data.addColumn('Number','Longitude');
+		
+		/* private int id;
+		    private String cause_of_death;
+		    private String region_origin;
+		    private int numDead;
+		    private String incident_region;
+		    private String date;
+		    private double latitude;
+		    private double longitude; */
 
 		for (i = 0; i < msgJson.length; i++) {
 			msgRow = [];
-			var timestampAsDate = new Date (msgJson[i].timestamp);
-			var totalMessages = i + 1;
+			var id = new Number (msgJson[i].id);
+			var cause_of_death = new String (msgJson[i].cause_of_death);
+			var region_origin = new String (msgJson[i].region_origin);
+			var numDead = new Number (msgJson[i].numDead);
+			var incident_region = new String (msgJson[i].incident_region);
+			var date = new Date (msgJson[i].date);
+			var latitude = new Number (msgJson[i].latitude);
+			var longitude = new Number (msgJson[i].longitude);
+			
 			//TODO add the formatted values to msgRow array by using JS' push method done
-			msgRow.push(timestampAsDate);
-			msgRow.push(totalMessages);
+			msgRow.push(id);
+			msgRow.push(cause_of_death);
+			msgRow.push(region_origin);
+			msgRow.push(numDead);
+			msgRow.push(incident_region);
+			msgRow.push(date);
+			msgRow.push(latitude);
+			msgRow.push(longitude);
+			
 			console.log(msgRow);
-			msgData.addRow(msgRow);
+			data.addRow(msgRow);
 
 		}
-		console.log(msgData);
-		drawChart(msgData);
+		console.log(data);
+		drawChart(data);
 	});
 } );
 
@@ -41,6 +70,9 @@ function drawChart(table) {
 			};
 
 	// Instantiate and draw our chart, passing in some options.
-	var chart = new google.visualization.BarChart(document.getElementById('chart'));
-	chart.draw(table, chart_options);
+	/*var chart = new google.visualization.BarChart(document.getElementById('chart'));
+	chart.draw(table, chart_options);*/
+	var table = new google.visualization.Table(document.getElementById('table_div'));
+
+    table.draw(table, {showRowNumber: true, width: '100%', height: '100%'});
 }
