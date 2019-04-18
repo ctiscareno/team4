@@ -8,14 +8,14 @@ function fetchMessageData() {
 	.then((msgJson) => {
 		var data = new google.visualization.DataTable();
 		//defining columns for the DataTable instances
-		data.addColumn('Number','ID');
-		data.addColumn('String','Cause of Death');
-		data.addColumn('String','Region of Origin');
-		data.addColumn('Number','#Dead');
-		data.addColumn('String','Region of Incident');
-		data.addColumn('Date','Date');
-		data.addColumn('Number','Latitude');
-		data.addColumn('Number','Longitude');
+		data.addColumn('number','id');
+		data.addColumn('string','Cause of Death');
+		data.addColumn('string','Region of Origin');
+		data.addColumn('number','#Dead');
+		data.addColumn('string','Region of Incident');
+		data.addColumn('string','Date');
+		data.addColumn('number','Latitude');
+		data.addColumn('number','Longitude');
 		
 		/* private int id;
 		    private String cause_of_death;
@@ -33,7 +33,7 @@ function fetchMessageData() {
 			var region_origin = new String (msgJson[i].region_origin);
 			var numDead = new Number (msgJson[i].numDead);
 			var incident_region = new String (msgJson[i].incident_region);
-			var date = new Date (msgJson[i].date);
+			var date = new String (msgJson[i].date);
 			var latitude = new Number (msgJson[i].latitude);
 			var longitude = new Number (msgJson[i].longitude);
 			
@@ -70,9 +70,9 @@ function drawChart(table) {
 			};
 
 	// Instantiate and draw our chart, passing in some options.
-	/*var chart = new google.visualization.BarChart(document.getElementById('chart'));
-	chart.draw(table, chart_options);*/
-	var table = new google.visualization.Table(document.getElementById('table_div'));
-
-    table.draw(table, {showRowNumber: true, width: '100%', height: '100%'});
+	/*var chart = new google.visualization.BarChart(document.getElementById('chart'));  */
+	//chart.draw(table, chart_options);
+	var chart = new google.visualization.Table(document.getElementById('table'));
+	chart.draw(table, chart_options);
+    //chart.draw(table, {showRowNumber: true, width: '100%', height: '100%'});
 }
