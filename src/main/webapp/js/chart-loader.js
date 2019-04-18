@@ -72,7 +72,7 @@ function drawChart(table) {
 	// Instantiate and draw our chart, passing in some options.
 	/*var chart = new google.visualization.BarChart(document.getElementById('chart'));  */
 	//chart.draw(table, chart_options);
-	var chart = new google.visualization.Table(document.getElementById('table'));
-	chart.draw(table, chart_options);
-    //chart.draw(table, {showRowNumber: true, width: '100%', height: '100%'});
+	var chart = new google.visualization.Table(document.getElementById('table_div'));
+	//chart.draw(table, chart_options);
+    chart.draw(table, {showRowNumber: true, width: '100%', height: '100%'});
 }
