@@ -1,29 +1,39 @@
-google.charts.load('current', {'packages':['corechart']});
+google.charts.load('current', {'packages':['table']});
 google.charts.setOnLoadCallback(
 function fetchMessageData() {
-	fetch("/messageChart")
+	fetch("/maps-part2")
 	.then((response) => {
 		return response.json();
 	})
 	.then((msgJson) => {
-		var msgData = new google.visualization.DataTable();
+		var data = new google.visualization.DataTable();
 		//defining columns for the DataTable instances
-		msgData.addColumn('date','Data');
-		msgData.addColumn('number','Message Count');
+		data.addColumn('number','id');
+		data.addColumn('string','Cause of Death');
+		data.addColumn('string','Region of Origin');
+		data.addColumn('number','#Dead');
+		data.addColumn('string','Region of Incident');
+		data.addColumn('string','Date');
+		data.addColumn('number','Latitude');
+		data.addColumn('number','Longitude');
 
 		for (i = 0; i < msgJson.length; i++) {
 			msgRow = [];
-			var timestampAsDate = new Date (msgJson[i].timestamp);
-			var totalMessages = i + 1;
-			//TODO add the formatted values to msgRow array by using JS' push method done
-			msgRow.push(timestampAsDate);
-			msgRow.push(totalMessages);
+			msgRow.push(msgJson[i].id);
+			msgRow.push(msgJson[i].cause_of_death);
+			msgRow.push(msgJson[i].region_origin);
+			msgRow.push(msgJson[i].numDead);
+			msgRow.push(msgJson[i].incident_region);
+			msgRow.push(msgJson[i].date);
+			msgRow.push(msgJson[i].latitude);
+			msgRow.push(msgJson[i].longitude);
+			
 			console.log(msgRow);
-			msgData.addRow(msgRow);
+			data.addRow(msgRow);
 
 		}
-		console.log(msgData);
-		drawChart(msgData);
+		console.log(data);
+		drawChart(data);
 	});
 } );
 
@@ -40,7 +50,6 @@ function drawChart(table) {
 			 bar: {groupWidth: "95%"},
 			};
 
-	// Instantiate and draw our chart, passing in some options.
-	var chart = new google.visualization.BarChart(document.getElementById('chart'));
-	chart.draw(table, chart_options);
+	var chart = new google.visualization.Table(document.getElementById('table_div'));
+    chart.draw(table, {showRowNumber: false, width: '100%', height: '100%'});
 }
