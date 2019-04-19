@@ -7,10 +7,19 @@
 <script type="text/javascript" 
 		src="/js/pie-loader.js">
   		</script>
-<title>A New Chart</title>
+	<link rel="stylesheet" href="/css/main.css">
+	<script src="/js/navigation-loader.js"></script>
+	<title>A New Chart</title>
 </head>
-<body>
-	<h1>Pie Chart</h1>
-	<div id="chart_div" style="width: 900px; height: 500px;"></div>
+<body onload="addLoginOrLogoutLinkToNavigation();">
+<nav id="navigation">
+	<a href="/">Home</a>
+	<a href="/about.html">About our Team</a>
+	<a href="/reports.html">Reports</a>
+	<a href="/feed.html">Global Feed</a>
+	<a href="/search.html">Search</a>
+</nav>
+	<h1 style="font-size:25px">Pie Chart</h1>
+	<div id="chart_div" style="width: 900px; height: 500px;display: inline-block; margin: 0 auto;"></div>
 </body>
 </html>
