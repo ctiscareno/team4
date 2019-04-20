@@ -115,3 +115,21 @@ nav li {
    padding: 20px;
    text-align: center;
  }
+
+ /* Clearfix (clear floats) */
+ .row::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+
+ .col {
+   width: 25%;
+   float: left;
+   padding: 15px;
+ }
+
+ *, :before, :after {
+    box-sizing: border-box;
+
+ }
