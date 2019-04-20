@@ -2,17 +2,19 @@
 <html>
     <head>
         <title>Global Feed</title>
-        <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/user-page.css">
+        <link rel="stylesheet" href="/css/main.css">
         <script src="/js/feed-loader.js"></script>
+        <script src="/js/navigation-loader.js"></script>
     </head>
 
-    <body onload="buildUI()">
+    <body onload="buildUI();addLoginOrLogoutLinkToNavigation();">
     <nav id="navigation">
         <a href="/">Home</a>
         <a href="/about.html">About our Team</a>
+        <a href="/reports.html">Reports</a>
         <a href="/feed.html">Global Feed</a>
-        <a href="/stats.html">Site Statistics</a>
+        <a href="/search.html">Search</a>
     </nav>
         <div id="content" class="padded rounded panel center">
         <h1>Global Feed</h1>

@@ -20,33 +20,39 @@ import com.google.gson.Gson;
  */
 @WebServlet("/user-markers")
 public class UserMarkerServlet extends HttpServlet {
+	private Datastore datastore;
 
- private Datastore datastore;
 
- @Override
- public void init() {
-  datastore = new Datastore();
- }
+	@Override
+	public void init() {
+		datastore = new Datastore();
+	}
 
- @Override
- public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-  response.setContentType("application/json");
+	@Override
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		response.setContentType("application/json");
 
-  List<UserMarker> markers = datastore.getMarkers();
-  Gson gson = new Gson();
-  String json = gson.toJson(markers);
+		List<UserMarker> markers = datastore.getMarkers();
+		Gson gson = new Gson();
+		String json = gson.toJson(markers);
 
-  response.getOutputStream().println(json);
- }
+		response.getOutputStream().println(json);
+	}
 
- @Override
- public void doPost(HttpServletRequest request, HttpServletResponse response) {
+	@Override
+	public void doPost(HttpServletRequest request, HttpServletResponse response) {
 
-  double lat = Double.parseDouble(request.getParameter("lat"));
-  double lng = Double.parseDouble(request.getParameter("lng"));
-  String content = Jsoup.clean(request.getParameter("content"), Whitelist.none());
+		double lat = Double.parseDouble(request.getParameter("lat"));
+		double lng = Double.parseDouble(request.getParameter("lng"));
+		String content = Jsoup.clean(request.getParameter("content"), Whitelist.none());
+		String causeOfDeath = Jsoup.clean(request.getParameter("causeOfDeath"), Whitelist.none());
+		String origin = Jsoup.clean(request.getParameter("origin"), Whitelist.none());
+		int numDead = Integer.parseInt(request.getParameter("numDead"));
+		String incidentRegion = Jsoup.clean(request.getParameter("incidentRegion"), Whitelist.none());
+		String date = Jsoup.clean(request.getParameter("date"), Whitelist.none());
 
-  UserMarker marker = new UserMarker(lat, lng, content);
-  datastore.storeMarker(marker);
- }
+
+		UserMarker marker = new UserMarker(lat, lng, content, causeOfDeath, origin, numDead, incidentRegion, date );
+		datastore.storeMarker(marker);
+	}
 }

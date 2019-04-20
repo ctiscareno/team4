@@ -1,7 +1,7 @@
 google.charts.load('current', {'packages':['table']});
 google.charts.setOnLoadCallback(
 function fetchMessageData() {
-	fetch("/maps-part2")
+	fetch("/searchMigrant")
 	.then((response) => {
 		return response.json();
 	})

@@ -5,7 +5,6 @@
 <head>
   <title>Missing Migrants</title>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDePI5QqK47mWycz2hNBpIJOZcla9hCriY"></script>
-  
   <script>
     let map;
     let editMarker;
@@ -26,11 +25,12 @@
 
         missingPersons.forEach((missingPerson) => {
           new google.maps.Marker({
-            position: {lat: missingPerson.lat, lng: missingPerson.lng},
+            position: {lat: missingPerson.latitude, lng: missingPerson.longitude},
             map: map
           });  
         });
       });
+
 
       fetchMarkers();
     }
@@ -40,12 +40,12 @@
         return response.json();
       }).then((markers) => {
         markers.forEach((marker) => {
-         createMarkerForDisplay(marker.lat, marker.lng, marker.content)
+         createMarkerForDisplay(marker.lat, marker.lng, marker.content, marker.causeOfDeath, marker.origin, marker.numDead,marker.incidentRegion, marker.date)
         });  
       });
     }
     
-    function createMarkerForDisplay(lat, lng, content){
+    function createMarkerForDisplay(lat, lng, content, causeOfDeath, origin, numDead, incidentRegion, date){
 
       const marker = new google.maps.Marker({
         position: {lat: lat, lng: lng},
@@ -53,7 +53,12 @@
       });
               
       var infoWindow = new google.maps.InfoWindow({
-        content: content
+        content: content,
+        causeOfDeath: causeOfDeath,
+        origin: origin,
+        numDead: numDead,
+        incidentRegion: incidentRegion,
+        date: date
       });
       marker.addListener('click', () => {
         infoWindow.open(map, marker);
@@ -65,10 +70,15 @@
       params.append('lat', lat);
       params.append('lng', lng);
       params.append('content', content);
-      
+      params.append('causeOfDeath', causeOfDeath);
+      params.append('origin', origin);
+      params.append('numDead', numDead);
+      params.append('incidentRegion', incidentRegion);
+      params.append('date',date)
+
       fetch('/user-markers', {
         method: 'POST',
-        body: formData
+        body: params
       });
     }
     
@@ -95,17 +105,53 @@
     }
     
     function buildInfoWindowInput(lat, lng){
-      const textBox = document.createElement('textarea');
+      const name = document.createElement('h5');
+      name.appendChild(document.createTextNode('Name'));
+      const nameBox = document.createElement('input');
+
+      const cod = document.createElement('h5');
+      cod.appendChild(document.createTextNode('Cause of Death'));
+      const codBox = document.createElement('input');
+
+
+      const or = document.createElement('h5');
+      or.appendChild(document.createTextNode('Origin'));
+      const orBox = document.createElement('input');
+
+      const numDead = document.createElement('h5');
+      numDead.appendChild(document.createTextNode('Number found Dead'));
+      const numDeadBox = document.createElement('input');
+
+      const ir = document.createElement('h5');
+      ir.appendChild(document.createTextNode('Incident Region'));
+      const irBox = document.createElement('input');
+
+      const dt = document.createElement('h5');
+      dt.appendChild(document.createTextNode('Date Found'));
+      const dtBox = document.createElement('input');
+
+
       const button = document.createElement('button');
-      button.appendChild(document.createTextNode('Submit'));
+      button.appendChild(document.createTextNode('Register'));
 
       button.onclick = () => {
-        createMarkerForDisplay(lat, lng, textBox.value);
+        createMarkerForDisplay(lat, lng, nameBox.value, codBox.value, orBox.value, numDeadBox.value, irBox.value,dtBox.value);
         editMarker.setMap(null);
       };
  
       const containerDiv = document.createElement('div');
-      containerDiv.appendChild(textBox);
+      containerDiv.appendChild(name);
+      containerDiv.appendChild(nameBox);
+      containerDiv.appendChild(cod);
+      containerDiv.appendChild(codBox);
+      containerDiv.appendChild(or);
+      containerDiv.appendChild(orBox);
+      containerDiv.appendChild(numDead);
+      containerDiv.appendChild(numDeadBox);
+      containerDiv.appendChild(ir);
+      containerDiv.appendChild(irBox);
+      containerDiv.appendChild(dt);
+      containerDiv.appendChild(dtBox);
       containerDiv.appendChild(document.createElement('br'));
       containerDiv.appendChild(button);
      
@@ -116,11 +162,28 @@
     #map{
       width: 500px;
       height: 500px;
+      border: 3px solid #f1f1f1;
+      position: absolute;
+      top: 25%;
+      left: 30%;
     }
   </style>
 </head>
-<body onload="createMissingPersonsMap();">
- <h1>Missing Migrants</h1>
+<link rel="stylesheet" href="/css/maps.css">
+<script src="/js/navigation-loader.js"></script>
+
+<body onload="createMissingPersonsMap();addLoginOrLogoutLinkToNavigation();">
+<nav id="navigation">
+<a href="/">Home</a>
+<a href="/about.html">About our Team</a>
+<a href="/reports.html">Reports</a>
+<a href="/feed.html">Global Feed</a>
+<a href="/search.html">Search</a>
+</nav>
+<div class="bg-image"></div>
+<div class="bg-text">
+    <h1 style="font-size:25px">Map of Known Missing Migrants</h1>
+</div>
  <div id="map"></div>
 </body>
 </html>

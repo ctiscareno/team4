@@ -22,41 +22,41 @@ body {
  }
 
  nav {
-   background-color: #c70039;
-   font-size: 16pt;
-   padding: 2px;
-   text-align: center;
-   width 100%;
- }
-
- nav a {
-    color: white;
-    margin-center: 30px;
+    background-color: #c70039;
+    font-size: 16pt;
+    padding: 2px;
     text-align: center;
-    padding-right: 15px;
-    padding-left: 15px;
+    width 100%;
   }
 
-#navigation .selected,#navigation a:hover
-{
-  background:#ff5733;
-  color:#000;
-  text-decoration:none;
-  padding-right: 15px;
-  padding-left: 15px;
-}
+  nav a {
+     color: white;
+     margin-center: 30px;
+     text-align: center;
+     padding-right: 15px;
+     padding-left: 15px;
+   }
 
-/* Remove bullet points from navigation bar. */
-nav ul {
-  list-style-type: none;
-  padding-left: 0;
-}
+ #navigation .selected,#navigation a:hover
+ {
+   background:#ff5733;
+   color:#000;
+   text-decoration:none;
+   padding-right: 15px;
+   padding-left: 15px;
+ }
 
-/* Keep navigation menu on one line. */
-nav li {
-  display: inline-block;
-  margin-right: 2px
-}
+ /* Remove bullet points from navigation bar. */
+ nav ul {
+   list-style-type: none;
+   padding-left: 0;
+ }
+
+ /* Keep navigation menu on one line. */
+ nav li {
+   display: inline-block;
+   margin-right: 2px
+ }
 
  .padded {
    padding: 5px;
@@ -107,29 +107,16 @@ nav li {
    font-weight: bold;
    border: 3px solid #f1f1f1;
    position: absolute;
-   top: 50%;
+   top: 15%;
    left: 50%;
    transform: translate(-50%, -50%);
    z-index: 2;
    width: 80%;
-   padding: 20px;
+   padding: 15px;
    text-align: center;
  }
 
- /* Clearfix (clear floats) */
- .row::after {
-   content: "";
-   clear: both;
-   display: table;
- }
-
- .col {
-   width: 25%;
-   float: left;
-   padding: 15px;
- }
-
- *, :before, :after {
-    box-sizing: border-box;
-
- }
+  p {
+     margin-center: auto;
+     text-align: center;
+  }

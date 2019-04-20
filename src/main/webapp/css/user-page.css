@@ -26,25 +26,41 @@ body {
  }
 
  nav {
-   background-color: #c042ff;
+   background-color: #c70039;
    font-size: 16pt;
    padding: 2px;
    text-align: center;
    width 100%;
-   justify-content: space-between;
  }
 
  nav a {
-   color: white;
-   margin-center: 5px;
-   text-align: center;
- }
+    color: white;
+    margin-center: 30px;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 
- nav a.on
- {
-     background:yellow;
-     padding:2px 6px;
- }
+#navigation .selected,#navigation a:hover
+{
+  background:#ff5733;
+  color:#000;
+  text-decoration:none;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Remove bullet points from navigation bar. */
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Keep navigation menu on one line. */
+nav li {
+  display: inline-block;
+  margin-right: 2px
+}
 
  h2 {
    margin: 0;
