@@ -15,18 +15,18 @@
  */
 body {
    margin: 0;
-   background: linear-gradient(purple, #ccccff) fixed;
+   background: white fixed;
    font-family: sans-serif;
-   text-align: center;
+   text-align: left;
  }
 
  p {
     margin-center: auto;
-    text-align: center;
+    text-align: left;
  }
 
  nav {
-   background-color: #c70039;
+   background-color: #a8c2dd;
    font-size: 16pt;
    padding: 2px;
    text-align: center;
@@ -43,7 +43,7 @@ body {
 
 #navigation .selected,#navigation a:hover
 {
-  background:#ff5733;
+  background: #788a9e;
   color:#000;
   text-decoration:none;
   padding-right: 15px;
@@ -64,11 +64,11 @@ nav li {
 
  h2 {
    margin: 0;
-   text-align: center;
+   text-align: left;
  }
 
  input[type=submit] {
-   background-color: #ccccff;
+   background-color: #a8c2dd;
    height: 50px;
    width: 100px;
    font-size: 14pt;
@@ -76,28 +76,23 @@ nav li {
 
  #content {
    margin-center: auto;
-   text-align: center;
-   /*margin-right: auto;*/
+   text-align: left;
  }
 
-#navigation .selected,#navigation a:hover
-{
-  background:#dbcd0f;
-  color:#000;
-  text-decoration:none;
-}
  #message-input {
    height: 100px;
-   width: 99%;
+   width: 100%;
  }
 
  .message-header {
-   border-bottom: thin solid black;
-   background-image: linear-gradient(to right, white , #ccccff);
+   border: thin solid black;
+   background-color: #a8c2dd;
+   margin-top: 10px;
  }
 
  .message-body {
-   font: 12pt cursive;
+   font: 12pt;
+   margin-top: 5px;
  }
 
  .panel {
@@ -106,13 +101,12 @@ nav li {
  }
 
  .centered{
-   text-align: center;
+   text-align: left;
  }
 
  .center {
    margin: auto;
-   width: 50%;
-   border: 3px solid #dbcd0f;
+   width: 70%;
    padding: 10px;
  }
 
