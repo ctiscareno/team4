@@ -1,13 +1,13 @@
 
 body {
    margin: 0;
-   background: linear-gradient(red, #900c3f) fixed;
+   background: white fixed;
    font-family: sans-serif;
    text-align: center;
  }
 
  nav {
-   background-color: #c70039;
+   background-color: #a8c2dd;
    font-size: 16pt;
    padding: 2px;
    text-align: center;
@@ -22,7 +22,7 @@ body {
 
 #navigation .selected,#navigation a:hover
 {
-  background:#ff5733;
+  background: #788a9e;
   color:#000;
   text-decoration:none;
 }
